@@ -67,10 +67,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="frame1.html" />
+    <Content Include="frame3.aspx" />
+    <Content Include="home.html" />
+    <Content Include="links.aspx" />
+    <Content Include="links.html" />
+    <Content Include="loginform.aspx" />
+    <Content Include="membership.aspx" />
     <Content Include="Registration.aspx" />
+    <Content Include="schedule.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frame3.aspx.cs">
+      <DependentUpon>frame3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="frame3.aspx.designer.cs">
+      <DependentUpon>frame3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="links.aspx.cs">
+      <DependentUpon>links.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="links.aspx.designer.cs">
+      <DependentUpon>links.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.aspx.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="loginform.aspx.designer.cs">
+      <DependentUpon>loginform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="membership.aspx.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="membership.aspx.designer.cs">
+      <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
@@ -78,6 +114,13 @@
     </Compile>
     <Compile Include="Registration.aspx.designer.cs">
       <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="schedule.aspx.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="schedule.aspx.designer.cs">
+      <DependentUpon>schedule.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
