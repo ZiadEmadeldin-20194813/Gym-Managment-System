@@ -48,14 +48,11 @@
         }
     </style>
 </head>
-<body style="height: 335px; width: 662px; margin-left: 305px; margin-top: 17px">
+<body style="height: 341px; width: 662px; margin-left: 319px; margin-top: 17px">
     <form id="form1" runat="server" class="auto-style6">
         <div class="auto-style9">
 &nbsp;
             <br />
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;
             <br />
 &nbsp;&nbsp;&nbsp;
         </div>
