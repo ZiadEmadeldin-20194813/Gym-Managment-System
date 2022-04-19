@@ -23,6 +23,7 @@
          .auto-style14:hover {
             cursor: pointer;
             color:#ff6600;
+            text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }
@@ -35,6 +36,7 @@
         .auto-style15:hover {
                cursor: pointer;
                color:#ff6600;
+               text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }
@@ -42,6 +44,7 @@
           .auto-style16:hover {
               cursor: pointer;
               color:#ff6600;
+              text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }
@@ -49,6 +52,7 @@
           .auto-style17:hover {
                cursor: pointer;
                color:#ff6600;
+               text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }
@@ -56,6 +60,7 @@
         .auto-style18:hover {
                 cursor: pointer;
                 color:#ff6600;
+                text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }
@@ -63,12 +68,14 @@
           .auto-style19:hover {      
               cursor: pointer;
               color:#ff6600;
+              text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }
             .auto-style20:hover {      
             cursor: pointer;
             color:#ff6600;
+            text-decoration-line:line-through;
             transition: 0.4s;
             transform: translate(1px,1px);
         }

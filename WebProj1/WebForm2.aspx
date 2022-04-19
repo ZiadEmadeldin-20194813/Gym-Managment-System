@@ -30,12 +30,14 @@
             position:fixed;
             right:635px;
             top:335px;
-            border-block-color:white;
-            border-radius:6px;
-            border-block-width:2px 2px;
+            border-block-color:#ff6600;
+            background-color:#ff6600;
+            color:white;
+            border-block-width:4px 4px 4px 4px;
         }
         .auto-style5:hover {      
              cursor: pointer;
+             
            
         }
     </style>
@@ -67,7 +69,7 @@
         <table class="auto-style5">
             <tr>
                 <td>
-                    <asp:Button ID="btnjoinus" runat="server"   Font-Names="Arial Rounded MT Bold" Text="JOIN US" Font-Size="30px" BackColor="#ff6600" ForeColor="White" CssClass="auto-style5" PostBackUrl="~/signupform.aspx"  />
+                    <asp:Button ID="btnjoinus" runat="server"   Font-Names="Arial Rounded MT Bold" Text="JOIN US" Font-Size="30px" ForeColor="white" CssClass="auto-style5" PostBackUrl="~/signupform.aspx"  />
                 </td>
             </tr>
         </table>
