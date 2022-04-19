@@ -75,8 +75,10 @@
     <Content Include="pictures\gym0.jpg" />
     <Content Include="pictures\gym1.jpg" />
     <Content Include="pictures\gym2.jpg" />
+    <Content Include="pictures\logo.png" />
     <Content Include="Registration.aspx" />
     <Content Include="schedule.aspx" />
+    <Content Include="signupform.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
@@ -116,6 +118,13 @@
     </Compile>
     <Compile Include="schedule.aspx.designer.cs">
       <DependentUpon>schedule.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="signupform.aspx.cs">
+      <DependentUpon>signupform.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="signupform.aspx.designer.cs">
+      <DependentUpon>signupform.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>
