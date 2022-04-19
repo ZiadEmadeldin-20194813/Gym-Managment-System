@@ -13,5 +13,15 @@ namespace WebProj1
         {
 
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

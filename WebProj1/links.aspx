@@ -7,103 +7,116 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            width: 100%;
+            width: 67%;
             position: fixed;
             left: -1px;
             top: 13px;
-            height: 52px;
+            height: 44px;
             table-layout: fixed;
         }
-        .schedule {
+
+        .auto-style14 {
             width: 132px;
             height: 48px;
         }
-         .schedule:hover {
+         .auto-style14:hover {
             cursor: pointer;
-            background-color: gray;
-            transition: 0.8s;
-            transform: translate(5px,5px);
+            transition: 0.4s;
+            transform: translate(1px,1px);
         }
-        .homeLabel {
+        .auto-style15 {
             width: 104px;
             height: 48px;
 
         }
-        .homeLabel:hover {
-            cursor: pointer;
-            background-color: gray;
-            transition: 0.8s;
-            transform: translate(5px,5px);
+        .auto-style15:hover {
+               cursor: pointer;
+            transition: 0.4s;
+            transform: translate(1px,1px);
         }
-        /*coaching*/
-        .auto-style8 {
-            width: 165px;
-            height: 48px;
-        }
-          .auto-style8:hover {
-            cursor: pointer;
-            background-color: gray;
-            transition: 0.8s;
-            transform: translate(5px,5px);
+       
+          .auto-style16:hover {
+              cursor: pointer;
+            transition: 0.4s;
+            transform: translate(1px,1px);
         }
 
-        /*products*/
-        .auto-style11 {
-            width: 129px;
+          .auto-style17:hover {
+               cursor: pointer;
+            transition: 0.4s;
+            transform: translate(1px,1px);
+        }
+     
+        .auto-style18:hover {
+                cursor: pointer;
+            transition: 0.4s;
+            transform: translate(1px,1px);
+        }
+ 
+          .auto-style19:hover {      
+              cursor: pointer;
+            transition: 0.4s;
+            transform: translate(1px,1px);
+        }
+            .auto-style20:hover {      
+            cursor: pointer;
+            transition: 0.4s;
+            transform: translate(1px,1px);
+        }
+        .auto-style14 {
+            width: 73px;
             height: 48px;
         }
-          .auto-style11:hover {
-            cursor: pointer;
-            background-color: gray;
-            transition: 0.8s;
-            transform: translate(5px,5px);
-        }
-        /*membership*/
-        .auto-style12 {
-            width: 155px;
+        .auto-style15 {
+            width: 97px;
             height: 48px;
         }
-        .auto-style12:hover {
-            cursor: pointer;
-            background-color: gray;
-            transition: 0.8s;
-            transform: translate(5px,5px);
-        }
-        /*login*/
-        .auto-style13 {
-            width: 148px;
+        .auto-style16 {
+            width: 89px;
             height: 48px;
         }
-          .auto-style13:hover {      
-            cursor: pointer;
-            background-color: gray;
-            transition: 0.8s;
-            transform: translate(5px,5px);
+        .auto-style17 {
+            width: 108px;
+            height: 48px;
+        }
+        .auto-style18 {
+            width: 91px;
+            height: 48px;
+        }
+        .auto-style19 {
+            width: 105px;
+        }
+        .auto-style20 {
+            width: 101px;
+            height: 48px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1" border="0" style="background-color: #212121; text-align: center; color: #FFFFFF;">
+            <table class="auto-style1" border="0">
                 <tr>
-                    <td class="homeLabel">
-                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Arial Black" Font-Size="Medium" Font-Underline="False" ForeColor="White" NavigateUrl="~/home.html" Target="_top">Home</asp:HyperLink>
+                    <td class="auto-style14" style="position: static">
+                        <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" ForeColor="White" NavigateUrl="~/home.html" Target="_top" Font-Bold="True">HOME</asp:HyperLink>
                     </td>
-                    <td class="auto-style12">
-                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Arial Black" Font-Size="Medium" ForeColor="White" NavigateUrl="membership.aspx" Target="F3">Membership</asp:HyperLink>
+                    <td class="auto-style15" style="position: static">
+                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="White"  Font-Underline="False" NavigateUrl="membership.aspx" Target="F3" Font-Bold="True">ABOUT US</asp:HyperLink>
                     </td>
-                    <td class="schedule">
-                        <asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Arial Black" Font-Size="Medium" ForeColor="White" NavigateUrl="schedule.aspx" Target="F3">Schedule</asp:HyperLink>
+                    <td class="auto-style16" style="position: static">
+                        <asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="White"  Font-Underline="False" NavigateUrl="schedule.aspx" Target="F2" Font-Bold="True">CLASSES</asp:HyperLink>
                     </td>
-                    <td class="auto-style8">
-                        <asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Arial Black" Font-Size="Medium" ForeColor="White">Coaching</asp:HyperLink>
+                    <td class="auto-style17" style="position: static">
+                        <asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="White" Font-Underline="False" Font-Bold="True">OUR TEAM</asp:HyperLink>
                     </td>
-                    <td class="auto-style11">
-                        <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Arial Black" Font-Size="Medium" ForeColor="White">Products</asp:HyperLink>
+                    <td class="auto-style18" style="position: static">
+                        <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="White" Font-Underline="False" Font-Bold="True">PAGES</asp:HyperLink>
                     </td>
-                    <td class="auto-style13">
-                        <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Arial Black" Font-Size="Medium" ForeColor="White" NavigateUrl="~/loginform.aspx" Target="F3">Sign In</asp:HyperLink>
+                    <td class="auto-style19" style="position: static">
+                        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="White" Font-Underline="False" Font-Bold="True">CONTACT</asp:HyperLink>
+                    </td>
+                    <td class="auto-style20" style="position: static">
+                        <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="White" Font-Underline="False" NavigateUrl="~/loginform.aspx" Target="F2" Font-Bold="True">SIGN IN</asp:HyperLink>
                     </td>
                 </tr>
             </table>
