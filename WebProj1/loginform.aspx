@@ -80,7 +80,7 @@
             </tr>
             <tr>
                 <td class="auto-style7" colspan="2">&nbsp;<br />
-                    <asp:Button ID="btnLogin" runat="server" Font-Names="Baskerville Old Face" Font-Size="Medium" Height="33px" OnClick="Button1_Click" Text="Login" Width="74px" />
+                    <asp:Button ID="btnLogin" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600" Font-Size="Medium" Height="33px" OnClick="Button1_Click" Text="Login" Width="74px" />
                 </td>
             </tr>
         </table>
