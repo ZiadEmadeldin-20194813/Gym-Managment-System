@@ -454,13 +454,12 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtrpass" ErrorMessage="RequiredFieldValidator" ForeColor="Maroon">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style90">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrpass" Operator="Equal" ErrorMessage ="Retype Password Correctly!" ForeColor="Maroon" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrpass" ErrorMessage="CompareValidator" ForeColor="Maroon"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style32">
-                        <asp:Button ID="btnsubmit0" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600" Font-Size="Large" runat="server" Text="BACK" PostBackUrl="~/WebForm2.aspx" />
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style128">
                         &nbsp;</td>
                     <td class="auto-style56">
