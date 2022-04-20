@@ -18,5 +18,10 @@ namespace WebProj1
         {
 
         }
+
+        protected void txtfname_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

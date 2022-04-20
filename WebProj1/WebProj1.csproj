@@ -75,6 +75,7 @@
     <Content Include="pictures\gym0.jpg" />
     <Content Include="pictures\gym1.jpg" />
     <Content Include="pictures\gym2.jpg" />
+    <Content Include="pictures\gym4.jpg" />
     <Content Include="pictures\logo.png" />
     <Content Include="schedule.aspx" />
     <Content Include="signupform.aspx" />
