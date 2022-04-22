@@ -73,6 +73,7 @@
     <Content Include="links.html" />
     <Content Include="loginform.aspx" />
     <Content Include="membership.aspx" />
+    <Content Include="pictures\backsignup.png" />
     <Content Include="pictures\email-icon-jpg-10.jpg" />
     <Content Include="pictures\footer.png" />
     <Content Include="pictures\gym0.jpg" />
