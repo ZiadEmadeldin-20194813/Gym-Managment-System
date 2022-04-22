@@ -58,8 +58,9 @@
             height: 21px;
         }
         .auto-style32 {
-            width: 256px;
-            height: 38px;
+           width: 256px;
+           height: 38px;
+           
         }
         .auto-style33 {
             height: 20px;
@@ -459,13 +460,14 @@
                 </tr>
                 <tr>
                     <td class="auto-style32">
-                        &nbsp;</td>
+                        <asp:HyperLink ID="HyperLink1" Font-Names="Bahnschrift SemiBold" ForeColor="White" BackColor="#FF6600"  Font-Size="Large" Font-Underline="False" BorderStyle="Groove" BorderColor="#FF6600" runat="server" NavigateUrl="~/WebForm2.aspx" Target="F2" Height="28px" Width="51px">      BACK  </asp:HyperLink>
+                    </td>
                     <td class="auto-style128">
                         &nbsp;</td>
                     <td class="auto-style56">
                         &nbsp;</td>
                     <td class="auto-style40">
-                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600"  Font-Size="Large" runat="server" Text="SUBMIT" />
+                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#ff6600" runat="server" Text="SUBMIT" Height="35px" Width="79px" />
                     </td>
                     <td class="auto-style77">
                         &nbsp;</td>

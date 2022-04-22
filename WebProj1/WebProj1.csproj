@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="contact.aspx" />
     <Content Include="home.html" />
     <Content Include="links.aspx" />
     <Content Include="links.html" />
@@ -77,13 +78,22 @@
     <Content Include="pictures\gym1.jpg" />
     <Content Include="pictures\gym2.jpg" />
     <Content Include="pictures\gym4.jpg" />
+    <Content Include="pictures\locationlogo.jpg" />
     <Content Include="pictures\logo.png" />
+    <Content Include="pictures\mobilelogo.png" />
     <Content Include="schedule.aspx" />
     <Content Include="signupform.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
     <Compile Include="links.aspx.cs">
       <DependentUpon>links.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

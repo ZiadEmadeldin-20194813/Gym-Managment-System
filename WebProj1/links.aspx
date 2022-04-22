@@ -111,8 +111,10 @@
         .auto-style20 {
             width: 101px;
             height: 48px;
-             color:white;
+            color:white;
         }
+        
+        
     </style>
 </head>
 <body>
@@ -134,9 +136,10 @@
                     </td>
                     <td class="auto-style18" style="position: static">
                         <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18">PAGES</asp:HyperLink>
+
                     </td>
                     <td class="auto-style19" style="position: static">
-                        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style19">CONTACT</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style19" NavigateUrl="~/contact.aspx" Target="F2">CONTACT</asp:HyperLink>
                     </td>
                     <td class="auto-style20" style="position: static">
                         <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" NavigateUrl="~/loginform.aspx" Target="F2" Font-Bold="True" CssClass="auto-style20">SIGN IN</asp:HyperLink>
