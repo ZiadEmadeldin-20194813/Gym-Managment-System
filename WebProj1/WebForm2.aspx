@@ -34,6 +34,7 @@
             background-color:#ff6600;
             color:white;
             border-block-width:4px 4px 4px 4px;
+            border-radius:5px;
         }
         .auto-style5:hover {      
              cursor: pointer;
