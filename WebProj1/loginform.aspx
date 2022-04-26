@@ -73,6 +73,11 @@
             width: 125px;
             height: 44px;
         }
+        .loginbtn {
+
+            border-radius:4px;
+
+        }
     </style>
 </head>
 <body style="height: 392px; width: 669px; margin-left: 319px; margin-top: 17px">
@@ -123,7 +128,7 @@
             </tr>
             <tr>
                 <td class="auto-style7" colspan="2">&nbsp;<br />
-                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600" Font-Size="20px" Height="33px" OnClick="Button1_Click" Text="Login" Width="74px" />
+                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600" Font-Size="20px" Height="33px" OnClick="Button1_Click" Text="Login" Width="74px" CssClass="loginbtn" />
                     <br />
                     <br />
                 </td>
