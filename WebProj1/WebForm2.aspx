@@ -38,8 +38,13 @@
         }
         .auto-style5:hover {      
              cursor: pointer;
+        }
+        .line{
+             position:fixed;
+             right:447px;
+             top:235px;
              
-           
+         
         }
     </style>
 </head>
@@ -74,6 +79,7 @@
                 </td>
             </tr>
         </table>
+        <asp:Label ID="Label5" runat="server" ForeColor="white" Font-Size="80px" Text=" ___________" CssClass="line"></asp:Label>
     </form>
 </body>
 </html>

@@ -123,6 +123,15 @@ namespace WebProj1
         protected global::System.Web.UI.WebControls.Label Label5;
 
         /// <summary>
+        /// rbtn1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButtonList rbtn1;
+
+        /// <summary>
         /// txtbirth control.
         /// </summary>
         /// <remarks>
@@ -150,13 +159,13 @@ namespace WebProj1
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// ddlcountry control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlcountry;
 
         /// <summary>
         /// Label8 control.
@@ -211,15 +220,6 @@ namespace WebProj1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnumber;
-
-        /// <summary>
-        /// RequiredFieldValidator8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator8;
 
         /// <summary>
         /// RegularExpressionValidator4 control.
@@ -355,5 +355,14 @@ namespace WebProj1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnsubmit;
+
+        /// <summary>
+        /// lblmsg control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblmsg;
     }
 }

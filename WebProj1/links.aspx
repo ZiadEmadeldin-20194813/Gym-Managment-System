@@ -126,16 +126,16 @@
                         <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Font-Bold="True" NavigateUrl="~/home.html" Target="_top" CssClass="auto-style14">HOME</asp:HyperLink>
                     </td>
                     <td class="auto-style15" style="position: static">
-                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="membership.aspx" Target="F3" Font-Bold="True" CssClass="auto-style15">ABOUT US</asp:HyperLink>
+                        &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="membership.aspx" Target="F3" Font-Bold="True" CssClass="auto-style15">SERVICES</asp:HyperLink>
                     </td>
                     <td class="auto-style16" style="position: static">
-                        <asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="schedule.aspx" Target="F2" Font-Bold="True" CssClass="auto-style16">CLASSES</asp:HyperLink>
+                        &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="schedule.aspx" Target="F2" Font-Bold="True" CssClass="auto-style16">CLASSES</asp:HyperLink>
                     </td>
                     <td class="auto-style17" style="position: static">
-                        <asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17">OUR TEAM</asp:HyperLink>
+                        &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17">OUR TEAM</asp:HyperLink>
                     </td>
                     <td class="auto-style18" style="position: static">
-                        <asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18">PAGES</asp:HyperLink>
+                        &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18">PAGES</asp:HyperLink>
 
                     </td>
                     <td class="auto-style19" style="position: static">

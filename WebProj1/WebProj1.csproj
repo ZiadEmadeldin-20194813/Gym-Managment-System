@@ -67,6 +67,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\gym.mdf" />
+    <Content Include="App_Data\gym_log.ldf">
+      <DependentUpon>gym.mdf</DependentUpon>
+    </Content>
     <Content Include="contact.aspx" />
     <Content Include="home.html" />
     <Content Include="links.aspx" />
@@ -74,15 +78,19 @@
     <Content Include="loginform.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="pictures\backsignup.png" />
-    <Content Include="pictures\email-icon-jpg-10.jpg" />
+    <Content Include="pictures\fb.png" />
     <Content Include="pictures\footer.png" />
     <Content Include="pictures\gym0.jpg" />
     <Content Include="pictures\gym1.jpg" />
     <Content Include="pictures\gym2.jpg" />
     <Content Include="pictures\gym4.jpg" />
+    <Content Include="pictures\insta.png" />
     <Content Include="pictures\locationlogo.jpg" />
     <Content Include="pictures\logo.png" />
+    <Content Include="pictures\mail.png" />
     <Content Include="pictures\mobilelogo.png" />
+    <Content Include="pictures\search.png" />
+    <Content Include="pictures\twitter.png" />
     <Content Include="schedule.aspx" />
     <Content Include="signupform.aspx" />
     <Content Include="Web.config" />

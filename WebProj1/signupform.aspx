@@ -1,7 +1,53 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signupform.aspx.cs" Inherits="WebProj1.signupform" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
 
 <!DOCTYPE html>
+<script runat="server">
+    protected void btnsubmit_Click(object sender, EventArgs e)
+    {
 
+        //1-Create Connection Object;
+
+        //SqlConnection conn = new SqlConnection();
+       
+        //conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
+
+        //2-create insert statement;
+        //string strInsert = String.Format("INSERT INTO Member VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}'"),txtfname.Text, txtLname.Text, rbtn1.SelectedValue, txtbirth.Text, ddlcountry.SelectedValue, txtemail.Text, txtnumber.Text, txtusername.Text, txtpass.Text);
+
+
+        string strInsert = "INSERT INTO Member" +
+            "VALUES('" + txtfname.Text + "','"
+            + txtlname.Text + "','"
+            + rbtn1.SelectedValue + "','"
+            + txtbirth.Text + "','"
+            + ddlcountry.SelectedValue + "','"
+            + txtemail.Text + "','"
+            + txtnumber.Text + "','"
+            + txtusername.Text + "','"
+            + txtpass.Text + "')";
+
+
+
+        //3-Create SQL command;
+        //SqlCommand cmdInsert = new SqlCommand(strInsert,conn);
+
+
+        //4-open database
+        //conn.Open();
+
+        //5-Execute SQL command
+        //cmdInsert.ExecuteNonQuery();
+
+
+        //6-close database
+        //conn.Close();
+
+        
+
+
+    }
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
@@ -41,10 +87,6 @@
         }
         .auto-style22 {
             height: 36px;
-        }
-        .auto-style24 {
-            width: 797px;
-            height: 38px;
         }
         .auto-style25 {
             width: 256px;
@@ -109,7 +151,6 @@
             width: 158px;
         }
         .auto-style77 {
-            width: 158px;
             height: 38px;
         }
         .auto-style85 {
@@ -314,7 +355,12 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style85">&nbsp;</td>
+                    <td class="auto-style85">
+                        <asp:RadioButtonList ID="rbtn1" runat="server" Font-Italic="False" Font-Names="Bahnschrift SemiBold" Font-Overline="False" Font-Size="Medium" Font-Strikeout="False" ForeColor="White" RepeatDirection="Horizontal">
+                            <asp:ListItem Selected="True" Value="M">Male</asp:ListItem>
+                            <asp:ListItem Value="F">Female</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </td>
                     <td class="auto-style122"></td>
                     <td class="auto-style87"></td>
                     <td class="auto-style88">
@@ -343,7 +389,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style28">
-                        <asp:DropDownList ID="DropDownList1" runat="server" Height="20px" Width="180px">
+                        <asp:DropDownList ID="ddlcountry" runat="server" Height="20px" Width="180px">
                             <asp:ListItem>Egypt</asp:ListItem>
                             <asp:ListItem>France</asp:ListItem>
                             <asp:ListItem>Italy</asp:ListItem>
@@ -390,8 +436,7 @@
                         <asp:TextBox ID="txtnumber" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style95">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtnumber" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
-                        </td>
+                        &nbsp;</td>
                     <td class="auto-style96">
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtnumber" ErrorMessage="Invalid Phone Number Format!" ForeColor="#D45769" ValidationExpression="\d{11,12}"></asp:RegularExpressionValidator>
                         </td>
@@ -440,7 +485,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style85">
-                        <asp:TextBox ID="txtpass" runat="server" Width="180px"></asp:TextBox>
+                        <asp:TextBox ID="txtpass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style122">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtpass" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
@@ -449,13 +494,13 @@
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters!" ForeColor="#D45769" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style88">
-                        <asp:TextBox ID="txtrpass" runat="server" Width="180px"></asp:TextBox>
+                        <asp:TextBox ID="txtrpass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style89">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtrpass" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style90">
-                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrpass" ErrorMessage="CompareValidator" ForeColor="#D45769"></asp:CompareValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrpass" ErrorMessage="Retype Password Correctly!" ForeColor="#D45769"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
@@ -467,11 +512,10 @@
                     <td class="auto-style56">
                         &nbsp;</td>
                     <td class="auto-style40">
-                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#ff6600" runat="server" Text="SUBMIT" Height="35px" Width="79px" />
+                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#ff6600" runat="server" Text="SUBMIT" Height="35px" Width="79px" OnClick="btnsubmit_Click" />
                     </td>
-                    <td class="auto-style77">
-                        &nbsp;</td>
-                    <td class="auto-style24">
+                    <td class="auto-style77" colspan="2">
+                        <asp:Label ID="lblmsg" Font-Names="Bahnschrift SemiBold" ForeColor="#D45769" runat="server"></asp:Label>
                     </td>
                 </tr>
             </table>

@@ -9,16 +9,16 @@
         .auto-style1 {
             width: 25%;
             height: 186px;
-            margin-left:70px;
+            margin-left:90px;
         }
         .auto-style2 {
-            width: 77px;
+            width: 84px;
         }
         .auto-style3 {
             margin-left: 0px;
         }
         .auto-style4 {
-            width: 77px;
+            width: 84px;
             height: 63px;
         }
         .auto-style5 {
@@ -35,6 +35,7 @@
         }
         .auto-style8 {
             width: 418px;
+            
         }
         .auto-style9 {
             height: 26px;
@@ -65,8 +66,6 @@
                     <td colspan="2">
                         <br />
                         <br />
-                        <br />
-                        <br />
                         <asp:Label ID="Label1" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#FF6600" Font-Size="20px" Text="CONTACT US"></asp:Label>
                     </td>
                 </tr>
@@ -74,12 +73,13 @@
                     <td colspan="2">
                         <asp:Label ID="Label2" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="White" Font-Size="35px" Text="GET IN TOUCH"></asp:Label>
                         <br />
+                        <br />
+                        <br />
                     </td>
                 </tr>
                 <tr>
 
-                    <td class="auto-style2">&nbsp;&nbsp;
-                        <asp:Image ID="Image1" runat="server" CssClass="auto-style3" Height="56px" ImageUrl="~/pictures/locationlogo.jpg" Width="58px" />
+                    <td class="auto-style2">&nbsp;<asp:Image ID="Image1" runat="server" CssClass="auto-style3" Height="56px" ImageUrl="~/pictures/locationlogo.jpg" Width="58px" />
                         <br />
                         <br />
                     </td>
@@ -91,7 +91,6 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        &nbsp;
                         <asp:Image ID="Image2" runat="server" Height="61px" ImageUrl="~/pictures/mobilelogo.png" Width="61px" />
                     </td>
                     <td class="auto-style5">
@@ -99,8 +98,9 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp; 
-                        <asp:Image ID="Image3" runat="server" Height="60px" ImageUrl="~/pictures/email-icon-jpg-10.jpg" Width="74px" />
+                    <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        <asp:Image ID="Image3" runat="server" Height="61px" ImageUrl="~/pictures/mail.png" Width="63px" />
                     </td>
                     <td>
                         <asp:Label ID="Label5" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" fontsize="40px" Text="Support.gymcenter@gmail.com" Font-Size="Large"></asp:Label>
@@ -154,7 +154,7 @@
             </tr>
             <tr>
                 <td class="auto-style9">
-                    <asp:TextBox ID="txtcontactcomment" runat="server" Height="80px" Width="411px"></asp:TextBox>
+                    <asp:TextBox ID="txtcontactcomment" runat="server" Height="80px" Width="411px" TextMode="MultiLine"></asp:TextBox>
                 </td>
                 <td class="auto-style11">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtcontactcomment" ErrorMessage="RequiredFieldValidator" Font-Size="Large" ForeColor="#D45769">*</asp:RequiredFieldValidator>

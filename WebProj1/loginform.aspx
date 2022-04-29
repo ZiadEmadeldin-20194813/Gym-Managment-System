@@ -118,7 +118,7 @@
                     <asp:Label ID="Label3" runat="server" Font-Names="Baskerville Old Face" Font-Size="Large" Text="Password:" ForeColor="White"></asp:Label>
                 </td>
                 <td class="auto-style17">
-                    <asp:TextBox ID="txtPassword" runat="server" Width="152px"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" runat="server" Width="152px" TextMode="Password"></asp:TextBox>
                 </td>
                 <td class="auto-style15">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="*" ForeColor="#D45769"></asp:RequiredFieldValidator>
