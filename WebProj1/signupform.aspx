@@ -1,49 +1,32 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="signupform.aspx.cs" Inherits="WebProj1.signupform" %>
 <%@ Import Namespace="System.Data.SqlClient" %>
 
+
 <!DOCTYPE html>
 <script runat="server">
     protected void btnsubmit_Click(object sender, EventArgs e)
     {
 
         //1-Create Connection Object;
-
-        //SqlConnection conn = new SqlConnection();
-       
-        //conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
 
         //2-create insert statement;
-        //string strInsert = String.Format("INSERT INTO Member VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}'"),txtfname.Text, txtLname.Text, rbtn1.SelectedValue, txtbirth.Text, ddlcountry.SelectedValue, txtemail.Text, txtnumber.Text, txtusername.Text, txtpass.Text);
-
-
-        string strInsert = "INSERT INTO Member" +
-            "VALUES('" + txtfname.Text + "','"
-            + txtlname.Text + "','"
-            + rbtn1.SelectedValue + "','"
-            + txtbirth.Text + "','"
-            + ddlcountry.SelectedValue + "','"
-            + txtemail.Text + "','"
-            + txtnumber.Text + "','"
-            + txtusername.Text + "','"
-            + txtpass.Text + "')";
-
-
+        string strInsert = String.Format("INSERT INTO Member VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')",txtfname.Text, txtlname.Text , rbtn1.SelectedValue, txtbirth.Text, ddlcountry.SelectedValue, txtemail.Text, txtnumber.Text, txtusername.Text, txtpass.Text);
 
         //3-Create SQL command;
-        //SqlCommand cmdInsert = new SqlCommand(strInsert,conn);
-
+        SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
 
         //4-open database
-        //conn.Open();
+        conn.Open();
 
         //5-Execute SQL command
-        //cmdInsert.ExecuteNonQuery();
-
+        cmdInsert.ExecuteNonQuery();
 
         //6-close database
-        //conn.Close();
+        conn.Close();
 
-        
+        lblmsg.Text = "Welcome " + txtfname.Text;
 
 
     }
