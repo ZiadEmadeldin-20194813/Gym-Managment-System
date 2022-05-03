@@ -38,6 +38,7 @@
         }
         .auto-style5:hover {      
              cursor: pointer;
+          
         }
         .line{
              position:fixed;
@@ -75,7 +76,7 @@
         <table class="auto-style5">
             <tr>
                 <td>
-                    <asp:Button ID="btnjoinus" runat="server"   Font-Names="Arial Rounded MT Bold" Text="JOIN US" Font-Size="30px" ForeColor="white" CssClass="auto-style5" PostBackUrl="~/signupform.aspx"  />
+                    <asp:Button ID="btnjoinus" runat="server"   Font-Names="Arial Rounded MT Bold" Text="JOIN US" Font-Size="30px" CssClass="auto-style5" PostBackUrl="~/signupform.aspx"  />
                 </td>
             </tr>
         </table>

@@ -17,17 +17,39 @@
         //3-Create SQL command;
         SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
 
-        //4-open database
-        conn.Open();
+        try
+        {
 
-        //5-Execute SQL command
-        cmdInsert.ExecuteNonQuery();
+            //4-open database
+            conn.Open();
 
-        //6-close database
-        conn.Close();
+            //5-Execute SQL command
+            cmdInsert.ExecuteNonQuery();
 
-        lblmsg.Text = "Welcome " + txtfname.Text;
+            //6-close database
+            conn.Close();
 
+            lblmsg.Text = "Welcome " + txtfname.Text ;
+
+
+        }
+        catch (SqlException err)
+        {
+            if (err.Number == 2627)
+            {
+                lblmsg.Text = "The username (" + txtusername.Text + ") already used! ";
+            }
+            else
+            {
+                lblmsg.Text = "Sorry, database problem please try again later!";
+            }
+
+        }
+
+        catch
+        {
+            lblmsg.Text = "The system is not available now, please try again later!";
+        }
 
     }
 </script>

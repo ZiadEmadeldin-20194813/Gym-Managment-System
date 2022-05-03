@@ -1,14 +1,61 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="loginform.aspx.cs" Inherits="WebProj1.loginform" %>
+<%@ Import Namespace="System.Data.SqlClient" %>
 
 <!DOCTYPE html>
+<script runat="server">
 
+
+    protected void btnLogin_Click(object sender, EventArgs e)
+    {
+        // 1-Create Connection Object;
+        SqlConnection conn = new SqlConnection();
+        conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
+
+        // 2-Create SQL Select statement
+        string strSelect = "SELECT * FROM Member"
+            + " WHERE Username = '" + txtUsername.Text + "'  AND Password = '" + txtPassword.Text + "'";
+
+
+        // 3-Create SQL Select Command
+        SqlCommand cmdSelect = new SqlCommand(strSelect,conn);
+
+        // 4-Create data reader object
+        SqlDataReader reader;
+
+        // 5-Open database
+        conn.Open();
+
+        // 6-Execute Select command
+        reader = cmdSelect.ExecuteReader();
+
+        if (reader.Read())
+        {
+            // Response.Redirect("   .aspx");
+            lbllogin.Text = "Success Login";
+        }
+        else
+        {
+            lbllogin.Text = "  Incorrect Username and/or Password, Please try again!!";
+
+        }
+
+        // 7- close database
+        conn.Close();
+
+
+    }
+
+
+
+</script>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
+
     <title></title>
     <style type="text/css">
         .auto-style1 {
             width: 97%;
-            height: 161px;
+            height: 351px;
             margin-left: 0px;
         }
         .auto-style2 {
@@ -26,6 +73,7 @@
         }
         .auto-style5 {
             margin-left: 0px;
+            border-radius:5px;
         }
         .auto-style6 {
             height: 189px;
@@ -33,17 +81,13 @@
             margin-left: 184px;
         }
         .auto-style7 {
-            height: 36px;
+            height: 32px;
             direction: ltr;
            
         }
         .auto-style9 {
             direction: ltr;
             width: 375px;
-        }
-        .auto-style13 {
-            height: 36px;
-            width: 27px;
         }
         .auto-style14 {
             width: 27px;
@@ -52,18 +96,6 @@
         .auto-style15 {
             width: 27px;
             height: 44px;
-        }
-        .auto-style16 {
-            width: 38px;
-            height: 42px;
-        }
-        .auto-style17 {
-            width: 38px;
-            height: 44px;
-        }
-        .auto-style20 {
-            height: 36px;
-            width: 125px;
         }
         .auto-style21 {
             width: 125px;
@@ -75,9 +107,44 @@
         }
         .loginbtn {
 
-            border-radius:4px;
-
+            background-color:#ff6600;
+            color:white;
+            border-radius:8px;
+           
         }
+        .loginbtn:hover {
+            cursor:pointer;
+            background-color:white;
+            color:#ff6600;
+            transition: 0.4s;
+            transform: translate(0px,1px);
+        }
+        
+        .auto-style23 {
+            width: 75px;
+            height: 42px;
+        }
+        .auto-style24 {
+            width: 75px;
+            height: 44px;
+        }
+        .auto-style25 {
+            height: 21px;
+            direction: ltr;
+        }
+        .auto-style26 {
+            height: 29px;
+            direction: ltr;
+        }
+        .auto-style28 {
+            border-radius:5px;
+        }
+        .signupnow
+        {
+            color:#FF6600;
+        }
+      
+        
     </style>
 </head>
 <body style="height: 392px; width: 669px; margin-left: 319px; margin-top: 17px">
@@ -104,7 +171,7 @@
                 <td class="auto-style4">
                     <asp:Label ID="Label2" runat="server" Font-Names="Baskerville Old Face" Font-Size="Large" Text="Username:" ForeColor="White"></asp:Label>
                 </td>
-                <td class="auto-style16">
+                <td class="auto-style23">
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="auto-style5" Width="152px"></asp:TextBox>
                 </td>
                 <td class="auto-style14">
@@ -117,8 +184,8 @@
                 <td class="auto-style3">
                     <asp:Label ID="Label3" runat="server" Font-Names="Baskerville Old Face" Font-Size="Large" Text="Password:" ForeColor="White"></asp:Label>
                 </td>
-                <td class="auto-style17">
-                    <asp:TextBox ID="txtPassword" runat="server" Width="152px" TextMode="Password"></asp:TextBox>
+                <td class="auto-style24">
+                    <asp:TextBox ID="txtPassword" runat="server" Width="152px" TextMode="Password" CssClass="auto-style28"></asp:TextBox>
                 </td>
                 <td class="auto-style15">
                     <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="*" ForeColor="#D45769"></asp:RequiredFieldValidator>
@@ -127,13 +194,22 @@
                     &nbsp;</td>
             </tr>
             <tr>
-                <td class="auto-style7" colspan="2">&nbsp;<br />
-                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600" Font-Size="20px" Height="33px" OnClick="Button1_Click" Text="Login" Width="74px" CssClass="loginbtn" />
+                <td class="auto-style7" colspan="4">&nbsp;<br />
+                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" Text="Login" Width="357px" CssClass="loginbtn" />
                     <br />
                     <br />
                 </td>
-                <td class="auto-style13">&nbsp;</td>
-                <td class="auto-style20">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style25" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Small" ForeColor="White" Text="Not a member?"></asp:Label>
+&nbsp;<asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Small" NavigateUrl="~/signupform.aspx" Target="F2" CssClass="signupnow">Signup now!</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style26" colspan="4">
+                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold"  Font-Size="Medium" ForeColor="#D45769"></asp:Label>
+                </td>
             </tr>
         </table>
     </form>
