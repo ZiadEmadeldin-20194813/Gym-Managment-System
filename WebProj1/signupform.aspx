@@ -309,7 +309,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style25">
-                        <asp:Label ID="Label2" Font-Names="Bahnschrift SemiBold" ForeColor="white" runat="server" Text="First Name:"></asp:Label>
+                        <asp:Label ID="Label2" Font-Names="Bahnschrift SemiBold" ForeColor="white" runat="server" Text="First Name:"></asp:Label>                   
                     </td>
                     <td class="auto-style120">
                         &nbsp;</td>
@@ -325,7 +325,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style28">
-                        <asp:TextBox ID="txtfname" runat="server" Width="180px" OnTextChanged="txtfname_TextChanged"></asp:TextBox>
+                        <asp:TextBox ID="txtfname" placeholder="ex: Ziad" runat="server" Width="180px" OnTextChanged="txtfname_TextChanged"></asp:TextBox>
                     </td>
                     <td class="auto-style121">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
@@ -334,7 +334,7 @@
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="Invalid First Name Format!" ForeColor="#D45769" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style36">
-                        <asp:TextBox ID="txtlname" runat="server" Width="180px"></asp:TextBox>
+                        <asp:TextBox ID="txtlname" placeholder="ex: Emad" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style74">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtlname" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
@@ -429,7 +429,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style91">
-                        <asp:TextBox ID="txtemail" runat="server" Width="180px"></asp:TextBox>
+                        <asp:TextBox ID="txtemail" placeholder="ex: name@example.com" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style124">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtemail" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>

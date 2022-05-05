@@ -35,9 +35,12 @@
             color:white;
             border-block-width:4px 4px 4px 4px;
             border-radius:5px;
+            border-right-color:#ff6600;
+            border-left-color:#ff6600;
         }
         .auto-style5:hover {      
              cursor: pointer;
+                          
           
         }
         .line{
@@ -50,7 +53,7 @@
     </style>
 </head>
 <body style="height: 427px">
-    <form id="form1" runat="server" class="auto-style3">
+    <form id="form1" runat="server" class="auto-style3" >
         &nbsp;&nbsp;
         <table class="auto-style1">
             <tr>

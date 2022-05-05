@@ -46,6 +46,10 @@
             color:white;
             font-family:Bahnschrift;
             block-size:20px;
+            border-block-color:#FF6600;
+            border-radius:5px;
+            border-right-color:#ff6600;
+            border-left-color:#ff6600;
 
 
         }

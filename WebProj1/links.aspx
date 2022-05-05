@@ -9,7 +9,7 @@
         .auto-style1 {
             width: 67%;
             position: fixed;
-            left: -1px;
+            left: 35px;
             top: 13px;
             height: 44px;
             table-layout: fixed;
@@ -61,8 +61,8 @@
                 cursor: pointer;
                 color:#ff6600;
                 text-decoration-line:line-through;
-            transition: 0.4s;
-            transform: translate(1px,1px);
+                transition: 0.4s;
+                transform: translate(1px,1px);
         }
  
           .auto-style19:hover {      
@@ -89,11 +89,6 @@
             height: 48px;
              color:white;
         }
-        .auto-style16 {
-            width: 89px;
-            height: 48px;
-             color:white;
-        }
         .auto-style17 {
             width: 108px;
             height: 48px;
@@ -115,33 +110,31 @@
         }
         
         
-    </style>
+        </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <table class="auto-style1" border="0">
                 <tr>
-                    <td class="auto-style14" style="position: static">
+                    <td class="auto-style14">
                         <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Font-Bold="True" NavigateUrl="~/home.html" Target="_top" CssClass="auto-style14">HOME</asp:HyperLink>
                     </td>
-                    <td class="auto-style15" style="position: static">
+                    <td class="auto-style15">
                         &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="membership.aspx" Target="F3" Font-Bold="True" CssClass="auto-style15">SERVICES</asp:HyperLink>
                     </td>
-                    <td class="auto-style16" style="position: static">
-                        &nbsp;<asp:HyperLink ID="HyperLink3" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="schedule.aspx" Target="F2" Font-Bold="True" CssClass="auto-style16">CLASSES</asp:HyperLink>
-                    </td>
-                    <td class="auto-style17" style="position: static">
+                    <td class="auto-style16" style="width: 100px">
                         &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17">OUR TEAM</asp:HyperLink>
                     </td>
-                    <td class="auto-style18" style="position: static">
-                        &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18">PAGES</asp:HyperLink>
+                    <td class="auto-style18">
+                        &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18">GALLERY</asp:HyperLink>
 
                     </td>
-                    <td class="auto-style19" style="position: static">
+                    <td class="auto-style19">
+                        &nbsp;
                         <asp:HyperLink ID="HyperLink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style19" NavigateUrl="~/contact.aspx" Target="F2">CONTACT</asp:HyperLink>
                     </td>
-                    <td class="auto-style20" style="position: static">
+                    <td class="auto-style17">
                         <asp:HyperLink ID="HyperLink6" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" NavigateUrl="~/loginform.aspx" Target="F2" Font-Bold="True" CssClass="auto-style20">SIGN IN</asp:HyperLink>
                     </td>
                 </tr>

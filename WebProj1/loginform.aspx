@@ -107,17 +107,25 @@
         }
         .loginbtn {
 
+            border-block-color:#ff6600;
             background-color:#ff6600;
             color:white;
             border-radius:8px;
+            
+            border-right-color:#ff6600;
+            border-left-color:#ff6600;
            
         }
         .loginbtn:hover {
             cursor:pointer;
             background-color:white;
             color:#ff6600;
+              border-block-color:white;
             transition: 0.4s;
             transform: translate(0px,1px);
+            
+            border-right-color:white;
+            border-left-color:white;
         }
         
         .auto-style23 {
