@@ -304,7 +304,7 @@
                 <tr>
                     <td colspan="6" class="auto-style22">
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="Label1"  Font-Names="Bahnschrift SemiBold" ForeColor="#FF6600" runat="server" Text="PERSONAL INFORMATION" CssClass="auto-style1"></asp:Label>
+                        <asp:Label ID="Label1"  Font-Names="Monotype Corsiva" ForeColor="#DD3333" runat="server" Text="PERSONAL INFORMATION" CssClass="auto-style1"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -328,19 +328,19 @@
                         <asp:TextBox ID="txtfname" placeholder="ex: Ziad" runat="server" Width="180px" OnTextChanged="txtfname_TextChanged"></asp:TextBox>
                     </td>
                     <td class="auto-style121">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style52">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="Invalid First Name Format!" ForeColor="#D45769" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="Invalid First Name Format!" ForeColor="#0F39FF" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style36">
                         <asp:TextBox ID="txtlname" placeholder="ex: Emad" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style74">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtlname" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtlname" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style15">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtlname" ErrorMessage="Invalid Last Name Format!" ForeColor="#D45769" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtlname" ErrorMessage="Invalid Last Name Format!" ForeColor="#0F39FF" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
                         </td>
                 </tr>
                 <tr>
@@ -372,7 +372,7 @@
                         <asp:TextBox ID="txtbirth" runat="server" Width="180px" TextMode="Date"></asp:TextBox>
                     </td>
                     <td class="auto-style89">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtbirth" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtbirth" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style90">
                         </td>
@@ -429,13 +429,13 @@
                 </tr>
                 <tr>
                     <td class="auto-style91">
-                        <asp:TextBox ID="txtemail" placeholder="ex: name@example.com" runat="server" Width="180px"></asp:TextBox>
+                        <asp:TextBox ID="txtemail" placeholder="ex: name@domain.com" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style124">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtemail" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtemail" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                         </td>
                     <td class="auto-style93">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtemail" ErrorMessage="Invalid Email Format!" ForeColor="#D45769" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtemail" ErrorMessage="Invalid Email Format!" ForeColor="#0F39FF" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style94">
                         <asp:TextBox ID="txtnumber" runat="server" Width="180px"></asp:TextBox>
@@ -443,7 +443,7 @@
                     <td class="auto-style95">
                         &nbsp;</td>
                     <td class="auto-style96">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtnumber" ErrorMessage="Invalid Phone Number Format!" ForeColor="#D45769" ValidationExpression="\d{11,12}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtnumber" ErrorMessage="Invalid Phone Number Format!" ForeColor="#0F39FF" ValidationExpression="\d{11,12}"></asp:RegularExpressionValidator>
                         </td>
                 </tr>
                 <tr>
@@ -463,10 +463,10 @@
                         <asp:TextBox ID="txtusername" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style126">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtusername" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtusername" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style116">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtusername" ErrorMessage="Should be 8 characters at least!" ForeColor="#D45769" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtusername" ErrorMessage="Should be 8 characters at least!" ForeColor="#0F39FF" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style117"></td>
                     <td class="auto-style118"></td>
@@ -490,34 +490,34 @@
                 </tr>
                 <tr>
                     <td class="auto-style85">
-                        <asp:TextBox ID="txtpass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txtpass" runat="server" Width="180px" TextMode="Password" ></asp:TextBox>
                     </td>
                     <td class="auto-style122">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtpass" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtpass" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style87">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters!" ForeColor="#D45769" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters!" ForeColor="#0F39FF" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style88">
                         <asp:TextBox ID="txtrpass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
                     </td>
                     <td class="auto-style89">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtrpass" ErrorMessage="RequiredFieldValidator" ForeColor="#D45769">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtrpass" ErrorMessage="RequiredFieldValidator" ForeColor="#0F39FF">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style90">
-                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrpass" ErrorMessage="Retype Password Correctly!" ForeColor="#D45769"></asp:CompareValidator>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtpass" ControlToValidate="txtrpass" ErrorMessage="Retype Password Correctly!" ForeColor="#0F39FF"></asp:CompareValidator>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style32">
-                        <asp:HyperLink ID="HyperLink1" Font-Names="Bahnschrift SemiBold" ForeColor="White" BackColor="#FF6600"  Font-Size="Large" Font-Underline="False" BorderStyle="Groove" BorderColor="#FF6600" runat="server" NavigateUrl="~/WebForm2.aspx" Target="F2" Height="28px" Width="51px">      BACK  </asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" Font-Names="Bahnschrift SemiBold" ForeColor="White" BackColor="#dd3333"  Font-Size="Large" Font-Underline="False" BorderStyle="Groove" BorderColor="#dd3333" runat="server" NavigateUrl="~/WebForm2.aspx" Target="F2" Height="28px" Width="51px">      BACK  </asp:HyperLink>
                     </td>
                     <td class="auto-style128">
                         &nbsp;</td>
                     <td class="auto-style56">
                         &nbsp;</td>
                     <td class="auto-style40">
-                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#ff6600"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#ff6600" runat="server" Text="SUBMIT" Height="35px" Width="79px" OnClick="btnsubmit_Click" />
+                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#dd3333"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#dd3333" runat="server" Text="SUBMIT" Height="35px" Width="79px" OnClick="btnsubmit_Click" />
                     </td>
                     <td class="auto-style77" colspan="2">
                         <asp:Label ID="lblmsg" Font-Names="Bahnschrift SemiBold" ForeColor="#D45769" runat="server"></asp:Label>

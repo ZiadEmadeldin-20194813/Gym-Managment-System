@@ -22,9 +22,8 @@
         }
          .auto-style14:hover {
             cursor: pointer;
-            color:#ff6600;
-            text-decoration-line:line-through;
-            transition: 0.4s;
+            color:#dd3333;
+            transition: 0.6s;
             transform: translate(1px,1px);
         }
         .auto-style15 {
@@ -35,48 +34,46 @@
         }
         .auto-style15:hover {
                cursor: pointer;
-               color:#ff6600;
-               text-decoration-line:line-through;
-            transition: 0.4s;
+               color:#dd3333;
+            transition: 0.6s;
             transform: translate(1px,1px);
         }
        
           .auto-style16:hover {
               cursor: pointer;
-              color:#ff6600;
-              text-decoration-line:line-through;
-            transition: 0.4s;
+              color:#dd3333;
+            transition: 0.6s;
             transform: translate(1px,1px);
         }
 
           .auto-style17:hover {
                cursor: pointer;
-               color:#ff6600;
-               text-decoration-line:line-through;
-            transition: 0.4s;
+               color:#dd3333;
+        
+            transition: 0.6s;
             transform: translate(1px,1px);
         }
      
         .auto-style18:hover {
                 cursor: pointer;
-                color:#ff6600;
-                text-decoration-line:line-through;
-                transition: 0.4s;
+                color:#dd3333;
+           
+                transition: 0.6s;
                 transform: translate(1px,1px);
         }
  
           .auto-style19:hover {      
               cursor: pointer;
-              color:#ff6600;
-              text-decoration-line:line-through;
-            transition: 0.4s;
+              color:#dd3333;
+              
+            transition: 0.6s;
             transform: translate(1px,1px);
         }
             .auto-style20:hover {      
             cursor: pointer;
-            color:#ff6600;
-            text-decoration-line:line-through;
-            transition: 0.4s;
+            color:#dd3333;
+            
+            transition: 0.6s;
             transform: translate(1px,1px);
         }
         .auto-style14 {
@@ -127,7 +124,7 @@
                         &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17">OUR TEAM</asp:HyperLink>
                     </td>
                     <td class="auto-style18">
-                        &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18">GALLERY</asp:HyperLink>
+                        &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18" NavigateUrl="~/gallery1.html" Target="F2">GALLERY</asp:HyperLink>
 
                     </td>
                     <td class="auto-style19">

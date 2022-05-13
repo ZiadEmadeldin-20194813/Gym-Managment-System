@@ -42,14 +42,14 @@
             width: 418px;
         }
         .subcomment {
-            background-color:#FF6600;
+            background-color:#DD3333;
             color:white;
             font-family:Bahnschrift;
             block-size:20px;
-            border-block-color:#FF6600;
+            border-block-color:#DD3333;
             border-radius:5px;
-            border-right-color:#ff6600;
-            border-left-color:#ff6600;
+            border-right-color:#DD3333;
+            border-left-color:#DD3333;
 
 
         }
@@ -70,7 +70,7 @@
                     <td colspan="2">
                         <br />
                         <br />
-                        <asp:Label ID="Label1" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#FF6600" Font-Size="20px" Text="CONTACT US"></asp:Label>
+                        <asp:Label ID="Label1" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#DD3333" Font-Size="20px" Text="CONTACT US"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -88,7 +88,7 @@
                         <br />
                     </td>
                     <td>
-                        <asp:Label ID="Label3" Font-Names="Bahnschrift SemiBold" runat="server"  ForeColor="White" fontsize="" Text="333 Middle Winchendon Rd, Rindge, NH 03461 S" Font-Size="Large"></asp:Label>
+                        <asp:Label ID="Label3" Font-Names="Bahnschrift SemiBold" runat="server"  ForeColor="White" fontsize="" Text="333 Middle Winchendon Rd, Rindge, NH 03461 S" Font-Size="Large" Font-Bold="True"></asp:Label>
                         </td>
                     <br />
                     <br>
@@ -98,7 +98,7 @@
                         <asp:Image ID="Image2" runat="server" Height="61px" ImageUrl="~/pictures/mobilelogo.png" Width="61px" />
                     </td>
                     <td class="auto-style5">
-                        <asp:Label ID="Label4" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" fontsize="40px" Text="125-711-811 125-668-886" Font-Size="Large"></asp:Label>
+                        <asp:Label ID="Label4" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" fontsize="40px" Text="125-711-811 125-668-886" Font-Size="Large" Font-Bold="True"></asp:Label>
                     </td>
                 </tr>
                 <tr>
@@ -107,7 +107,7 @@
                         <asp:Image ID="Image3" runat="server" Height="61px" ImageUrl="~/pictures/mail.png" Width="63px" />
                     </td>
                     <td>
-                        <asp:Label ID="Label5" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" fontsize="40px" Text="Support.gymcenter@gmail.com" Font-Size="Large"></asp:Label>
+                        <asp:Label ID="Label5" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" fontsize="40px" Text="Support.gymcenter@gmail.com" Font-Size="Large" Font-Bold="True"></asp:Label>
                     </td>
                 </tr>
             </table>
@@ -115,7 +115,7 @@
         <table class="auto-style6">
             <tr>
                 <td class="auto-style8">
-                    <asp:Label ID="Label6" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#FF6600" Font-Size="20px" Text="NAME"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#DD3333" Font-Size="20px" Text="NAME"></asp:Label>
                 </td>
                 <td class="auto-style10">&nbsp;</td>
                 <td>&nbsp;</td>
@@ -133,7 +133,7 @@
             </tr>
             <tr>
                 <td class="auto-style8">
-                    <asp:Label ID="Label7" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#FF6600" Font-Size="20px" Text="EMAIL"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#DD3333" Font-Size="20px" Text="EMAIL"></asp:Label>
                 </td>
                 <td class="auto-style10">&nbsp;</td>
                 <td>&nbsp;</td>
@@ -151,7 +151,7 @@
             </tr>
             <tr>
                 <td class="auto-style8">
-                    <asp:Label ID="Label8" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#FF6600" Font-Size="20px" Text="COMMENT:"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Font-Names="Bahnschrift SemiBold" ForeColor="#DD3333" Font-Size="20px" Text="COMMENT"></asp:Label>
                 </td>
                 <td class="auto-style10">&nbsp;</td>
                 <td>&nbsp;</td>

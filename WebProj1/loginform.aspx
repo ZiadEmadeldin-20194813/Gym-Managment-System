@@ -35,7 +35,7 @@
         }
         else
         {
-            lbllogin.Text = "  Incorrect Username and/or Password, Please try again!!";
+            lbllogin.Text = "  Incorrect Username and/or Password!";
 
         }
 
@@ -107,21 +107,21 @@
         }
         .loginbtn {
 
-            border-block-color:#ff6600;
-            background-color:#ff6600;
+            border-block-color:#DD3333;
+            background-color:#DD3333;
             color:white;
             border-radius:8px;
             
-            border-right-color:#ff6600;
-            border-left-color:#ff6600;
+            border-right-color:#DD3333;
+            border-left-color:#DD3333;
            
         }
         .loginbtn:hover {
             cursor:pointer;
             background-color:white;
-            color:#ff6600;
+            color:#DD3333;
               border-block-color:white;
-            transition: 0.4s;
+            transition: 0.6s;
             transform: translate(0px,1px);
             
             border-right-color:white;
@@ -149,7 +149,7 @@
         }
         .signupnow
         {
-            color:#FF6600;
+            color:#DD3333;
         }
       
         
@@ -168,11 +168,11 @@
         <table class="auto-style1" style="background-image:url(pictures/backsignup.png); border-radius:25px; border: medium groove #000000">
             <tr>
                 <td class="auto-style2" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Image ID="Image1" runat="server" ImageUrl="~/pictures/logo.png" />
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/pictures/masterlogo.png" />
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2" colspan="4">&nbsp;<asp:Label ID="Label1" runat="server" Font-Names="Baskerville Old Face" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#FF6600"></asp:Label>
+                <td class="auto-style2" colspan="4">&nbsp;<asp:Label ID="Label1" runat="server" Font-Names="Baskerville Old Face" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333"></asp:Label>
 &nbsp;</td>
             </tr>
             <tr>
@@ -216,7 +216,7 @@
             </tr>
             <tr>
                 <td class="auto-style26" colspan="4">
-                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold"  Font-Size="Medium" ForeColor="#D45769"></asp:Label>
+                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold"  Font-Size="Medium" ForeColor="#0F39FF"></asp:Label>
                 </td>
             </tr>
         </table>

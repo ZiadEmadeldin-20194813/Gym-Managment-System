@@ -27,16 +27,17 @@
        
         .auto-style5 {
              
+           
             position:fixed;
             right:635px;
             top:335px;
-            border-block-color:#ff6600;
-            background-color:#ff6600;
+            border-block-color:#dd3333;
+            background-color:#dd3333;
             color:white;
             border-block-width:4px 4px 4px 4px;
             border-radius:5px;
-            border-right-color:#ff6600;
-            border-left-color:#ff6600;
+            border-right-color:#dd3333;
+            border-left-color:#dd3333;
         }
         .auto-style5:hover {      
              cursor: pointer;
@@ -67,7 +68,7 @@
 
                 </td>
                 <td class="auto-style4">
-                     <asp:Label ID="Label4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="60px" Font-Underline="False" ForeColor="#ff6600" Font-Bold="True" Text="STRONG"></asp:Label>
+                     <asp:Label ID="Label4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="60px" Font-Underline="False" ForeColor="#DD3333" Font-Bold="True" Text="STRONG"></asp:Label>
                 </td>
             </tr>
             <tr>

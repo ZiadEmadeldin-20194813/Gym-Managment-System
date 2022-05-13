@@ -72,6 +72,7 @@
       <DependentUpon>gym.mdf</DependentUpon>
     </Content>
     <Content Include="contact.aspx" />
+    <Content Include="gallery1.html" />
     <Content Include="home.html" />
     <Content Include="links.aspx" />
     <Content Include="links.html" />
@@ -80,6 +81,17 @@
     <Content Include="pictures\backsignup.png" />
     <Content Include="pictures\fb.png" />
     <Content Include="pictures\footer.png" />
+    <Content Include="pictures\g1.jpg" />
+    <Content Include="pictures\g12.jpg" />
+    <Content Include="pictures\g13.jpg" />
+    <Content Include="pictures\g14.jpg" />
+    <Content Include="pictures\g2.jpg" />
+    <Content Include="pictures\g3.jpg" />
+    <Content Include="pictures\g4.jpg" />
+    <Content Include="pictures\g5.jpg" />
+    <Content Include="pictures\g6.jpg" />
+    <Content Include="pictures\g7.jpg" />
+    <Content Include="pictures\g8.jpg" />
     <Content Include="pictures\gym0.jpg" />
     <Content Include="pictures\gym1.jpg" />
     <Content Include="pictures\gym2.jpg" />
@@ -88,11 +100,13 @@
     <Content Include="pictures\locationlogo.jpg" />
     <Content Include="pictures\logo.png" />
     <Content Include="pictures\mail.png" />
+    <Content Include="pictures\masterlogo.png" />
     <Content Include="pictures\mobilelogo.png" />
     <Content Include="pictures\search.png" />
     <Content Include="pictures\twitter.png" />
     <Content Include="schedule.aspx" />
     <Content Include="signupform.aspx" />
+    <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
   </ItemGroup>

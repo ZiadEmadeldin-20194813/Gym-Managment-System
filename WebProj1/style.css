@@ -1,0 +1,138 @@
+﻿
+                                                       /* Style of gallery page*/
+
+body {
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+}
+.slide-container{
+    width:100%;
+    height:85vh;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+
+}
+.image-slider{
+    width:100%;
+    height:200px;
+    position:absolute;
+    left:0;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transition: .7s;
+}
+.slide-div {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: 0 30px 0 30px;
+}
+.img {
+    position: relative;
+    width: 380px;
+    height: 270px;
+    transition: .5s;
+    filter: saturate(10%);
+    border-radius: 15px;
+}
+.button {
+    position: absolute;
+    width: 380px;
+    height: 270px;
+    transition: .5s;
+    border-radius: 15px;
+}
+    .button:hover {
+      
+    }
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5 {
+    width: 480px;
+    height: 360px;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+
+#slider-span8:target ~ .image-slider #img8,
+#slider-span8:target ~ .image-slider #button-8 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+#slider-span9:target ~ .image-slider #img9,
+#slider-span9:target ~ .image-slider #button-9 {
+    width: 480px;
+    height: 360px;
+    background-color: transparent;
+    filter: saturate(100%);
+    border-radius: 15px;
+}
+
+
+#slider-span1:target ~ .image-slider {left: 96.6%;}
+#slider-span2:target ~ .image-slider {left: 96.6%;}
+#slider-span3:target ~ .image-slider {left: 64.5%;}
+#slider-span4:target ~ .image-slider {left: 32.1%;}
+
+#slider-span6:target ~ .image-slider {left: -32.1%;}
+#slider-span7:target ~ .image-slider {left: -64.5%;}
+#slider-span8:target ~ .image-slider {left: -96.6%;}
+#slider-span9:target ~ .image-slider {left: -96.6%;}
+
