@@ -19,6 +19,7 @@
             width: 132px;
             height: 48px;
             color:white;
+            letter-spacing:0.5px;
         }
          .auto-style14:hover {
             cursor: pointer;
@@ -30,6 +31,7 @@
             width: 104px;
             height: 48px;
              color:white;
+             letter-spacing:0.5px;
 
         }
         .auto-style15:hover {
@@ -37,6 +39,7 @@
                color:#dd3333;
             transition: 0.6s;
             transform: translate(1px,1px);
+        
         }
        
           .auto-style16:hover {
@@ -75,35 +78,42 @@
             
             transition: 0.6s;
             transform: translate(1px,1px);
+         
         }
         .auto-style14 {
             width: 73px;
             height: 48px;
              color:white;
+             letter-spacing:0.5px;
         }
         .auto-style15 {
             width: 97px;
             height: 48px;
              color:white;
+             letter-spacing:0.5px;
         }
         .auto-style17 {
             width: 108px;
             height: 48px;
              color:white;
+             letter-spacing:0.5px;
         }
         .auto-style18 {
             width: 91px;
             height: 48px;
              color:white;
+             letter-spacing:0.5px;
         }
         .auto-style19 {
             width: 105px;
              color:white;
+             letter-spacing:0.5px;
         }
         .auto-style20 {
             width: 101px;
             height: 48px;
             color:white;
+            letter-spacing:0.5px;
         }
         
         
@@ -118,7 +128,7 @@
                         <asp:HyperLink ID="HyperLink1" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Font-Bold="True" NavigateUrl="~/home.html" Target="_top" CssClass="auto-style14">HOME</asp:HyperLink>
                     </td>
                     <td class="auto-style15">
-                        &nbsp;<asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="membership.aspx" Target="F3" Font-Bold="True" CssClass="auto-style15">SERVICES</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="~/about.aspx" Target="F2" Font-Bold="True" CssClass="auto-style15">ABOUT US</asp:HyperLink>
                     </td>
                     <td class="auto-style16" style="width: 100px">
                         &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17">OUR TEAM</asp:HyperLink>

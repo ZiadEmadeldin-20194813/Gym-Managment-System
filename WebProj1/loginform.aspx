@@ -121,7 +121,7 @@
             background-color:white;
             color:#DD3333;
               border-block-color:white;
-            transition: 0.6s;
+            transition: 1s;
             transform: translate(0px,1px);
             
             border-right-color:white;
@@ -169,7 +169,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2" colspan="4">&nbsp;&nbsp; <asp:Label ID="Label1" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333"></asp:Label>
+                <td class="auto-style2" colspan="4">&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333"></asp:Label>
 &nbsp;</td>
             </tr>
             <tr>
@@ -180,7 +180,7 @@
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="auto-style5" Width="152px"></asp:TextBox>
                 </td>
                 <td class="auto-style14">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" ErrorMessage="*" ForeColor="#D45769"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" ErrorMessage="*" ForeColor="#FFFFCC"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style21">
                     &nbsp;</td>
@@ -193,14 +193,14 @@
                     <asp:TextBox ID="txtPassword" runat="server" Width="152px" TextMode="Password" CssClass="auto-style28"></asp:TextBox>
                 </td>
                 <td class="auto-style15">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="*" ForeColor="#D45769"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="*" ForeColor="#FFFFCC"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style22">
                     &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style7" colspan="4">&nbsp;<br />
-                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" Text="Login" Width="357px" CssClass="loginbtn" />
+                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bauhaus 93" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" Text="Login" Width="357px" CssClass="loginbtn" />
                     <br />
                     <br />
                 </td>
@@ -213,7 +213,8 @@
             </tr>
             <tr>
                 <td class="auto-style26" colspan="4">
-                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold"  Font-Size="Medium" ForeColor="#0F39FF"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold"  Font-Size="Medium" ForeColor="#FFFFCC"></asp:Label>
                 </td>
             </tr>
         </table>

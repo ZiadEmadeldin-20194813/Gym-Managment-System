@@ -36,14 +36,17 @@
         <div class="auto-style6">
             <table class="auto-style1">
                 <tr>
+                    <td>
+                        <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Names="Arial Black" Font-Size="X-Large" ForeColor="White" Text="|"></asp:Label>
+&nbsp;&nbsp; </td>
                     <td class="auto-style5">
-                        <asp:ImageButton ID="Image1" runat="server" Height="20px" ImageUrl="~/pictures/fb1.png" Width="22px" ImageAlign="Middle"/>
+                        <asp:ImageButton ID="Image1" runat="server" Height="18px" ImageUrl="~/pictures/fb1.png" Width="20px"  ImageAlign="Middle"/>
                     </td>
                     <td class="auto-style4">
-                        <asp:ImageButton ID="Image2" runat="server" CssClass="auto-style3" Height="20px" ImageUrl="~/pictures/insta1.png" Width="22px" ImageAlign="Middle" />
+                        <asp:ImageButton ID="Image2" runat="server" CssClass="auto-style3" Height="18px" ImageUrl="~/pictures/insta1.png" Width="20px" ImageAlign="Middle" />
                     </td>
                     <td class="auto-style7">
-                        <asp:ImageButton ID="Image3" runat="server" Height="20px" ImageUrl="~/pictures/twitter1.png" Width="22px" ImageAlign="Middle" />
+                        <asp:ImageButton ID="Image3" runat="server" Height="18px" ImageUrl="~/pictures/twitter1.png" Width="20px" ImageAlign="Middle" />
                     </td>
                 </tr>
             </table>
