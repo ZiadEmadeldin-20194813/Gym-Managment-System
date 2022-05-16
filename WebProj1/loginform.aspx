@@ -155,13 +155,10 @@
         
     </style>
 </head>
-<body style="height: 392px; width: 669px; margin-left: 319px; margin-top: 17px">
+<body style="height: 392px; width: 669px; margin-left: 305px; margin-top: 17px">
     <form id="form1" runat="server" class="auto-style6">
         <div class="auto-style9">
-&nbsp;
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;
+&nbsp;<br />
             <br />
             <br />
         </div>
@@ -172,12 +169,12 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2" colspan="4">&nbsp;<asp:Label ID="Label1" runat="server" Font-Names="Baskerville Old Face" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333"></asp:Label>
+                <td class="auto-style2" colspan="4">&nbsp;&nbsp; <asp:Label ID="Label1" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333"></asp:Label>
 &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style4">
-                    <asp:Label ID="Label2" runat="server" Font-Names="Baskerville Old Face" Font-Size="Large" Text="Username:" ForeColor="White"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Large" Text="Username:" ForeColor="White"></asp:Label>
                 </td>
                 <td class="auto-style23">
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="auto-style5" Width="152px"></asp:TextBox>
@@ -190,7 +187,7 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="Label3" runat="server" Font-Names="Baskerville Old Face" Font-Size="Large" Text="Password:" ForeColor="White"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Large" Text="Password:" ForeColor="White"></asp:Label>
                 </td>
                 <td class="auto-style24">
                     <asp:TextBox ID="txtPassword" runat="server" Width="152px" TextMode="Password" CssClass="auto-style28"></asp:TextBox>
@@ -203,7 +200,7 @@
             </tr>
             <tr>
                 <td class="auto-style7" colspan="4">&nbsp;<br />
-                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" Text="Login" Width="357px" CssClass="loginbtn" />
+                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" Text="Login" Width="357px" CssClass="loginbtn" />
                     <br />
                     <br />
                 </td>

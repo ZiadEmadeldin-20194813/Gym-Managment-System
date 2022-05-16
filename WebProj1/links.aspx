@@ -9,7 +9,7 @@
         .auto-style1 {
             width: 67%;
             position: fixed;
-            left: 35px;
+            left: 132px;
             top: 13px;
             height: 44px;
             table-layout: fixed;

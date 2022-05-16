@@ -40,8 +40,7 @@
             border-left-color:#dd3333;
         }
         .auto-style5:hover {      
-             cursor: pointer;
-                          
+
           
         }
         .line{

@@ -72,14 +72,16 @@
       <DependentUpon>gym.mdf</DependentUpon>
     </Content>
     <Content Include="contact.aspx" />
+    <Content Include="footer.aspx" />
     <Content Include="gallery1.html" />
     <Content Include="home.html" />
     <Content Include="links.aspx" />
     <Content Include="links.html" />
     <Content Include="loginform.aspx" />
+    <Content Include="logos.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="pictures\backsignup.png" />
-    <Content Include="pictures\fb.png" />
+    <Content Include="pictures\fb1.png" />
     <Content Include="pictures\footer.png" />
     <Content Include="pictures\g1.jpg" />
     <Content Include="pictures\g12.jpg" />
@@ -96,14 +98,14 @@
     <Content Include="pictures\gym1.jpg" />
     <Content Include="pictures\gym2.jpg" />
     <Content Include="pictures\gym4.jpg" />
-    <Content Include="pictures\insta.png" />
+    <Content Include="pictures\insta1.png" />
     <Content Include="pictures\locationlogo.jpg" />
     <Content Include="pictures\logo.png" />
     <Content Include="pictures\mail.png" />
     <Content Include="pictures\masterlogo.png" />
     <Content Include="pictures\mobilelogo.png" />
     <Content Include="pictures\search.png" />
-    <Content Include="pictures\twitter.png" />
+    <Content Include="pictures\twitter1.png" />
     <Content Include="schedule.aspx" />
     <Content Include="signupform.aspx" />
     <Content Include="style.css" />
@@ -118,6 +120,13 @@
     <Compile Include="contact.aspx.designer.cs">
       <DependentUpon>contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="footer.aspx.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="footer.aspx.designer.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+    </Compile>
     <Compile Include="links.aspx.cs">
       <DependentUpon>links.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -131,6 +140,13 @@
     </Compile>
     <Compile Include="loginform.aspx.designer.cs">
       <DependentUpon>loginform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="logos.aspx.cs">
+      <DependentUpon>logos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="logos.aspx.designer.cs">
+      <DependentUpon>logos.aspx</DependentUpon>
     </Compile>
     <Compile Include="membership.aspx.cs">
       <DependentUpon>membership.aspx</DependentUpon>
