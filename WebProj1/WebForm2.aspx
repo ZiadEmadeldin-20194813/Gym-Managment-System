@@ -42,7 +42,7 @@
         .auto-style5:hover {      
              cursor:pointer;
             background-color:inherit;
-            transition:0.8s;
+            transition:0.9s;
       
           
         }
@@ -57,6 +57,7 @@
 </head>
 <body style="height: 427px">
     <form id="form1" runat="server" class="auto-style3" >
+
         &nbsp;&nbsp;
         <table class="auto-style1">
             <tr>

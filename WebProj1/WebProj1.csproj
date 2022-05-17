@@ -79,7 +79,6 @@
     <Content Include="links.aspx" />
     <Content Include="links.html" />
     <Content Include="loginform.aspx" />
-    <Content Include="logos.aspx" />
     <Content Include="membership.aspx" />
     <Content Include="pictures\backsignup.png" />
     <Content Include="pictures\fb1.png" />
@@ -110,6 +109,7 @@
     <Content Include="pictures\twitter1.png" />
     <Content Include="schedule.aspx" />
     <Content Include="signupform.aspx" />
+    <Content Include="social.aspx" />
     <Content Include="style.css" />
     <Content Include="Web.config" />
     <Content Include="WebForm2.aspx" />
@@ -150,13 +150,6 @@
     <Compile Include="loginform.aspx.designer.cs">
       <DependentUpon>loginform.aspx</DependentUpon>
     </Compile>
-    <Compile Include="logos.aspx.cs">
-      <DependentUpon>logos.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="logos.aspx.designer.cs">
-      <DependentUpon>logos.aspx</DependentUpon>
-    </Compile>
     <Compile Include="membership.aspx.cs">
       <DependentUpon>membership.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -178,6 +171,13 @@
     </Compile>
     <Compile Include="signupform.aspx.designer.cs">
       <DependentUpon>signupform.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="social.aspx.cs">
+      <DependentUpon>social.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="social.aspx.designer.cs">
+      <DependentUpon>social.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebForm2.aspx.cs">
       <DependentUpon>WebForm2.aspx</DependentUpon>

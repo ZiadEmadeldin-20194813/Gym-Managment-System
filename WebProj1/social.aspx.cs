@@ -7,16 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace WebProj1
 {
-    public partial class logos : System.Web.UI.Page
+    public partial class social : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void Image1_Click(object sender, ImageClickEventArgs e)
-        {
-            
 
         }
     }

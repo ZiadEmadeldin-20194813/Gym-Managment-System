@@ -169,7 +169,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2" colspan="4">&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333"></asp:Label>
+                <td class="auto-style2" colspan="4">&nbsp;&nbsp; <asp:Label ID="Label1" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Medium" Text="PLEASE ENTER YOUR USERNAME &amp; PASSWORD" ForeColor="#DD3333" Font-Bold="True"></asp:Label>
 &nbsp;</td>
             </tr>
             <tr>
