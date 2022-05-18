@@ -80,7 +80,12 @@
     <Content Include="links.html" />
     <Content Include="loginform.aspx" />
     <Content Include="membership.aspx" />
+    <Content Include="ourteam.aspx" />
     <Content Include="pictures\backsignup.png" />
+    <Content Include="pictures\c1.jpg" />
+    <Content Include="pictures\c2.jpg" />
+    <Content Include="pictures\c3.jpg" />
+    <Content Include="pictures\c4.jpg" />
     <Content Include="pictures\fb1.png" />
     <Content Include="pictures\footer.png" />
     <Content Include="pictures\g1.jpg" />
@@ -156,6 +161,13 @@
     </Compile>
     <Compile Include="membership.aspx.designer.cs">
       <DependentUpon>membership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ourteam.aspx.cs">
+      <DependentUpon>ourteam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ourteam.aspx.designer.cs">
+      <DependentUpon>ourteam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="schedule.aspx.cs">

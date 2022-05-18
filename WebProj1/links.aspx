@@ -131,7 +131,7 @@
                         <asp:HyperLink ID="HyperLink2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"   Font-Underline="False" NavigateUrl="~/about.aspx" Target="F2" Font-Bold="True" CssClass="auto-style15">ABOUT US</asp:HyperLink>
                     </td>
                     <td class="auto-style16" style="width: 100px">
-                        &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17">OUR TEAM</asp:HyperLink>
+                        &nbsp;<asp:HyperLink ID="HyperLink4" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style17" NavigateUrl="~/ourteam.aspx" Target="F2">OUR TEAM</asp:HyperLink>
                     </td>
                     <td class="auto-style18">
                         &nbsp;<asp:HyperLink ID="HyperLink5" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large"  Font-Underline="False" Font-Bold="True" CssClass="auto-style18" NavigateUrl="~/gallery1.html" Target="F2">GALLERY</asp:HyperLink>
