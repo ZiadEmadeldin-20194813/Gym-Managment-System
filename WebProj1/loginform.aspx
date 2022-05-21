@@ -174,7 +174,7 @@
             </tr>
             <tr>
                 <td class="auto-style4">
-                    <asp:Label ID="Label2" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Large" Text="Username:" ForeColor="White"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Text="Username:" ForeColor="White"></asp:Label>
                 </td>
                 <td class="auto-style23">
                     <asp:TextBox ID="txtUsername" runat="server" CssClass="auto-style5" Width="152px"></asp:TextBox>
@@ -187,7 +187,7 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="Label3" runat="server" Font-Names="Berlin Sans FB Demi" Font-Size="Large" Text="Password:" ForeColor="White"></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Text="Password:" ForeColor="White"></asp:Label>
                 </td>
                 <td class="auto-style24">
                     <asp:TextBox ID="txtPassword" runat="server" Width="152px" TextMode="Password" CssClass="auto-style28"></asp:TextBox>
