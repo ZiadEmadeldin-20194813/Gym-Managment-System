@@ -29,6 +29,11 @@
             //6-close database
             conn.Close();
 
+            if(fupPic.HasFile)
+            {
+                fupPic.SaveAs(Server.MapPath("userPic") + "\\" + txtusername.Text + ".jpg");
+            }
+
             lblmsg.Text = "Welcome " + txtfname.Text ;
 
 
@@ -91,7 +96,7 @@
             border-radius:8px;
         }
         .auto-style22 {
-            height: 36px;
+            height: 27px;
         }
         .auto-style25 {
             width: 256px;
@@ -106,11 +111,6 @@
             width: 256px;
             height: 21px;
         }
-        .auto-style32 {
-           width: 256px;
-           height: 38px;
-           
-        }
         .auto-style33 {
             height: 20px;
             width: 237px;
@@ -123,10 +123,6 @@
             height: 21px;
             width: 237px;
         }
-        .auto-style40 {
-            width: 237px;
-            height: 38px;
-        }
         .auto-style49 {
             height: 20px;
             width: 839px;
@@ -138,10 +134,6 @@
         .auto-style54 {
             height: 21px;
             width: 839px;
-        }
-        .auto-style56 {
-            width: 839px;
-            height: 38px;
         }
         .auto-style71 {
             height: 20px;
@@ -156,7 +148,7 @@
             width: 158px;
         }
         .auto-style77 {
-            height: 38px;
+            height: 33px;
         }
         .auto-style85 {
             width: 256px;
@@ -176,26 +168,6 @@
         }
         .auto-style90 {
             height: 26px;
-            width: 797px;
-        }
-        .auto-style91 {
-            width: 256px;
-            height: 34px;
-        }
-        .auto-style93 {
-            height: 34px;
-            width: 839px;
-        }
-        .auto-style94 {
-            height: 34px;
-            width: 237px;
-        }
-        .auto-style95 {
-            height: 34px;
-            width: 158px;
-        }
-        .auto-style96 {
-            height: 34px;
             width: 797px;
         }
         .auto-style102 {
@@ -239,26 +211,6 @@
             height: 22px;
             width: 797px;
         }
-        .auto-style114 {
-            width: 256px;
-            height: 27px;
-        }
-        .auto-style116 {
-            height: 27px;
-            width: 839px;
-        }
-        .auto-style117 {
-            height: 27px;
-            width: 237px;
-        }
-        .auto-style118 {
-            height: 27px;
-            width: 158px;
-        }
-        .auto-style119 {
-            height: 27px;
-            width: 797px;
-        }
         .auto-style120 {
             height: 20px;
             width: 152px;
@@ -275,25 +227,81 @@
             height: 22px;
             width: 152px;
         }
-        .auto-style124 {
-            height: 34px;
-            width: 152px;
-        }
         .auto-style125 {
             height: 21px;
-            width: 152px;
-        }
-        .auto-style126 {
-            height: 27px;
             width: 152px;
         }
         .auto-style127 {
             height: 18px;
             width: 152px;
         }
-        .auto-style128 {
+        .auto-style135 {
+            width: 256px;
+            height: 25px;
+        }
+        .auto-style136 {
+            height: 25px;
             width: 152px;
-            height: 38px;
+        }
+        .auto-style137 {
+            height: 25px;
+            width: 839px;
+        }
+        .auto-style138 {
+            height: 25px;
+            width: 237px;
+        }
+        .auto-style139 {
+            height: 25px;
+            width: 158px;
+        }
+        .auto-style140 {
+            height: 25px;
+            width: 797px;
+        }
+        .auto-style141 {
+            width: 256px;
+            height: 24px;
+        }
+        .auto-style142 {
+            height: 24px;
+            width: 152px;
+        }
+        .auto-style143 {
+            height: 24px;
+            width: 839px;
+        }
+        .auto-style144 {
+            height: 24px;
+            width: 237px;
+        }
+        .auto-style145 {
+            height: 24px;
+            width: 158px;
+        }
+        .auto-style146 {
+            height: 24px;
+            width: 797px;
+        }
+        .auto-style147 {
+            width: 256px;
+            height: 33px;
+        }
+        .auto-style148 {
+            height: 33px;
+            width: 152px;
+        }
+        .auto-style149 {
+            height: 33px;
+            width: 839px;
+        }
+        .auto-style150 {
+            height: 33px;
+            width: 237px;
+        }
+        .pic {
+            color:white;
+            border-radius:3px;
         }
     </style>
 </head>
@@ -325,22 +333,22 @@
                 </tr>
                 <tr>
                     <td class="auto-style28">
-                        <asp:TextBox ID="txtfname" placeholder="ex: Ziad" runat="server" Width="180px" OnTextChanged="txtfname_TextChanged"></asp:TextBox>
+                        <asp:TextBox ID="txtfname" placeholder="ex: Ziad or Abd Elrahman" runat="server" Width="180px" OnTextChanged="txtfname_TextChanged"></asp:TextBox>
                     </td>
                     <td class="auto-style121">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style52">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="Invalid First Name Format!" ForeColor="#FFFFCC" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtfname" ErrorMessage="Invalid First Name Format!" ForeColor="#FFFFCC" ValidationExpression="([A-Z][a-z]*)([ ][A-Z][a-z]*)*"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style36">
-                        <asp:TextBox ID="txtlname" placeholder="ex: Emad" runat="server" Width="180px"></asp:TextBox>
+                        <asp:TextBox ID="txtlname" placeholder="ex: Ziad or Abd Elrahman" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style74">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtlname" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style15">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtlname" ErrorMessage="Invalid Last Name Format!" ForeColor="#FFFFCC" ValidationExpression="[A-Z][a-z]*"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtlname" ErrorMessage="Invalid Last Name Format!" ForeColor="#FFFFCC" ValidationExpression="([A-Z][a-z]*)([ ][A-Z][a-z]*)*"></asp:RegularExpressionValidator>
                         </td>
                 </tr>
                 <tr>
@@ -360,21 +368,21 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style85">
+                    <td class="auto-style28">
                         <asp:RadioButtonList ID="rbtn1" runat="server" Font-Italic="False" Font-Names="Bahnschrift SemiBold" Font-Overline="False" Font-Size="Medium" Font-Strikeout="False" ForeColor="White" RepeatDirection="Horizontal">
                             <asp:ListItem Selected="True" Value="M">Male</asp:ListItem>
                             <asp:ListItem Value="F">Female</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
-                    <td class="auto-style122"></td>
-                    <td class="auto-style87"></td>
-                    <td class="auto-style88">
+                    <td class="auto-style121"></td>
+                    <td class="auto-style52"></td>
+                    <td class="auto-style36">
                         <asp:TextBox ID="txtbirth" runat="server" Width="180px" TextMode="Date"></asp:TextBox>
                     </td>
-                    <td class="auto-style89">
+                    <td class="auto-style74">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtbirth" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style90">
+                    <td class="auto-style15">
                         </td>
                 </tr>
                 <tr>
@@ -386,7 +394,8 @@
                     <td class="auto-style49">
                         &nbsp;</td>
                     <td class="auto-style33">
-                        &nbsp;</td>
+                        <asp:Label ID="Label13" Font-Names="Bahnschrift SemiBold" ForeColor="white" runat="server" Text="Phone Number:"></asp:Label>
+                    </td>
                     <td class="auto-style71">
                         &nbsp;</td>
                     <td class="auto-style18">
@@ -394,10 +403,18 @@
                 </tr>
                 <tr>
                     <td class="auto-style28">
-                        <asp:DropDownList ID="ddlcountry" runat="server" Height="20px" Width="180px">
+                        <asp:DropDownList ID="ddlcountry" runat="server" Height="21px" Width="189px">
                             <asp:ListItem>Egypt</asp:ListItem>
                             <asp:ListItem>France</asp:ListItem>
                             <asp:ListItem>Italy</asp:ListItem>
+                            <asp:ListItem>Greece</asp:ListItem>
+                            <asp:ListItem>Japan</asp:ListItem>
+                            <asp:ListItem>Kuwait</asp:ListItem>
+                            <asp:ListItem>Morocco</asp:ListItem>
+                            <asp:ListItem>Qatar</asp:ListItem>
+                            <asp:ListItem>Russia</asp:ListItem>
+                            <asp:ListItem>Spain</asp:ListItem>
+                            <asp:ListItem>United States of America</asp:ListItem>
                         </asp:DropDownList>
                         </td>
                     <td class="auto-style121">
@@ -405,11 +422,13 @@
                     <td class="auto-style52">
                         &nbsp;</td>
                     <td class="auto-style36">
-                        &nbsp;</td>
+                        <asp:TextBox ID="txtnumber" runat="server" Width="180px"></asp:TextBox>
+                    </td>
                     <td class="auto-style74">
                         &nbsp;</td>
                     <td class="auto-style15">
-                        &nbsp;</td>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="txtnumber" ErrorMessage="Invalid Phone Number Format!" ForeColor="#FFFFCC" ValidationExpression="\d{10,14}"></asp:RegularExpressionValidator>
+                        </td>
                 </tr>
                 <tr>
                     <td class="auto-style108">
@@ -420,7 +439,7 @@
                     <td class="auto-style110">
                         </td>
                     <td class="auto-style111">
-                        <asp:Label ID="Label9" Font-Names="Bahnschrift SemiBold" ForeColor="white" runat="server" Text="Phone Number:"></asp:Label>
+                        <asp:Label ID="Label14" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" Text="Profile Picture:"></asp:Label>
                     </td>
                     <td class="auto-style112">
                         </td>
@@ -428,22 +447,21 @@
                         </td>
                 </tr>
                 <tr>
-                    <td class="auto-style91">
+                    <td class="auto-style135">
                         <asp:TextBox ID="txtemail" placeholder="ex: name@domain.com" runat="server" Width="180px"></asp:TextBox>
                     </td>
-                    <td class="auto-style124">
+                    <td class="auto-style136">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtemail" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                         </td>
-                    <td class="auto-style93">
+                    <td class="auto-style137">
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtemail" ErrorMessage="Invalid Email Format!" ForeColor="#FFFFCC" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                         </td>
-                    <td class="auto-style94">
-                        <asp:TextBox ID="txtnumber" runat="server" Width="180px"></asp:TextBox>
+                    <td class="auto-style138">
+                        <asp:FileUpload ID="fupPic" runat="server" CssClass="pic"/>
                     </td>
-                    <td class="auto-style95">
-                        &nbsp;</td>
-                    <td class="auto-style96">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtnumber" ErrorMessage="Invalid Phone Number Format!" ForeColor="#FFFFCC" ValidationExpression="\d{11,12}"></asp:RegularExpressionValidator>
+                    <td class="auto-style139">
+                        </td>
+                    <td class="auto-style140">
                         </td>
                 </tr>
                 <tr>
@@ -459,18 +477,18 @@
                     <td class="auto-style20"></td>
                 </tr>
                 <tr>
-                    <td class="auto-style114">
+                    <td class="auto-style141">
                         <asp:TextBox ID="txtusername" runat="server" Width="180px"></asp:TextBox>
                     </td>
-                    <td class="auto-style126">
+                    <td class="auto-style142">
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtusername" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
-                    <td class="auto-style116">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtusername" ErrorMessage="Should be 8 characters at least!" ForeColor="#FFFFCC" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
+                    <td class="auto-style143">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtusername" ErrorMessage="Should be between 8-16 characters!" ForeColor="#FFFFCC" ValidationExpression="\w{8,16}"></asp:RegularExpressionValidator>
                         </td>
-                    <td class="auto-style117"></td>
-                    <td class="auto-style118"></td>
-                    <td class="auto-style119"></td>
+                    <td class="auto-style144"></td>
+                    <td class="auto-style145"></td>
+                    <td class="auto-style146"></td>
                 </tr>
                 <tr>
                     <td class="auto-style102">
@@ -509,15 +527,15 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style32">
+                    <td class="auto-style147">
                         <asp:HyperLink ID="HyperLink1" Font-Names="Bahnschrift SemiBold" ForeColor="White" BackColor="#dd3333"  Font-Size="Large" Font-Underline="False" BorderStyle="Groove" BorderColor="#dd3333" runat="server" NavigateUrl="~/WebForm2.aspx" Target="F2" Height="28px" Width="51px">      BACK  </asp:HyperLink>
                     </td>
-                    <td class="auto-style128">
-                        &nbsp;</td>
-                    <td class="auto-style56">
-                        &nbsp;</td>
-                    <td class="auto-style40">
-                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#dd3333"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#dd3333" runat="server" Text="SUBMIT" Height="35px" Width="79px" OnClick="btnsubmit_Click" />
+                    <td class="auto-style148">
+                        </td>
+                    <td class="auto-style149">
+                        </td>
+                    <td class="auto-style150">
+                        <asp:Button ID="btnsubmit" Font-Names="Bahnschrift SemiBold" ForeColor="white" BackColor="#dd3333"  Font-Size="Large" Font-Underline="false" BorderStyle="Groove" BorderColor="#dd3333" runat="server" Text="SUBMIT" Height="33px" Width="76px" OnClick="btnsubmit_Click" />
                     </td>
                     <td class="auto-style77" colspan="2">
                         <asp:Label ID="lblmsg" Font-Names="Bahnschrift SemiBold" ForeColor="#D45769" runat="server"></asp:Label>

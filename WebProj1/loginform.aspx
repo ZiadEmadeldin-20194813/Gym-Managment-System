@@ -30,14 +30,22 @@
 
         if (reader.Read())
         {
-            // Response.Redirect("   .aspx");
-            lbllogin.Text = "Success Login";
+            if (txtUsername.Text == "admin2022")   
+                // Response.Redirect("~/adminHome.aspx");
+                lbllogin.Text = "Welcome admin";
+            else if (txtUsername.Text == "coach1" || txtUsername.Text == "coach2" || txtUsername.Text == "coach3")
+                 // Response.Redirect("~/coachHome.aspx");
+                lbllogin.Text = "Welcome coach";
+            else
+                // Response.Redirect("~/userHome.aspx");
+                lbllogin.Text = "Success Login";
+            
         }
         else
         {
             lbllogin.Text = "  Incorrect Username and/or Password!";
-
         }
+
 
         // 7- close database
         conn.Close();
