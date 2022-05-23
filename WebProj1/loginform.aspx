@@ -37,9 +37,9 @@
                  // Response.Redirect("~/coachHome.aspx");
                 lbllogin.Text = "Welcome coach";
             else
-                // Response.Redirect("~/userHome.aspx");
-                lbllogin.Text = "Success Login";
-            
+
+                Response.Redirect("~/user.Master");
+               
         }
         else
         {
@@ -208,7 +208,7 @@
             </tr>
             <tr>
                 <td class="auto-style7" colspan="4">&nbsp;<br />
-                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bauhaus 93" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" Text="Login" Width="357px" CssClass="loginbtn" />
+                    &nbsp; <asp:Button ID="btnLogin" runat="server" Font-Names="Bauhaus 93" Font-Size="20px" Height="33px" OnClick="btnLogin_Click" OnClientClick="window.document.forms[0].target='_Parent';" Text="Login" Width="357px" CssClass="loginbtn" />
                     <br />
                     <br />
                 </td>
