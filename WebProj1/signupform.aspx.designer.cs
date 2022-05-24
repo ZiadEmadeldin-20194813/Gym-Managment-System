@@ -132,13 +132,13 @@ namespace WebProj1
         protected global::System.Web.UI.WebControls.RadioButtonList rbtn1;
 
         /// <summary>
-        /// txtbirth control.
+        /// txtage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtbirth;
+        protected global::System.Web.UI.WebControls.TextBox txtage;
 
         /// <summary>
         /// RequiredFieldValidator6 control.
@@ -148,6 +148,15 @@ namespace WebProj1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
+
+        /// <summary>
+        /// RegularExpressionValidator8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator8;
 
         /// <summary>
         /// Label6 control.

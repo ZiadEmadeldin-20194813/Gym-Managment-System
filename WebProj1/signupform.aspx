@@ -12,7 +12,7 @@
         conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
 
         //2-create insert statement;
-        string strInsert = String.Format("INSERT INTO Member VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')",txtfname.Text, txtlname.Text , rbtn1.SelectedValue, txtbirth.Text, ddlcountry.SelectedValue, txtemail.Text, txtnumber.Text, txtusername.Text, txtpass.Text);
+        string strInsert = String.Format("INSERT INTO Member VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')",txtfname.Text, txtlname.Text , rbtn1.SelectedValue, txtage.Text, ddlcountry.SelectedValue, txtemail.Text, txtnumber.Text, txtusername.Text, txtpass.Text);
 
         //3-Create SQL command;
         SqlCommand cmdInsert = new SqlCommand(strInsert, conn);
@@ -33,6 +33,17 @@
             {
                 fupPic.SaveAs(Server.MapPath("userPic") + "\\" + txtusername.Text + ".jpg");
             }
+
+
+            HttpCookie coco = new HttpCookie("userInfo");
+            coco.Values.Add("usern",txtusername.Text);
+            coco.Values.Add("passw",txtpass.Text);
+
+            coco.Values.Add("Fn", txtfname.Text);
+            coco.Values.Add("Ln", txtlname.Text);
+
+            coco.Expires = DateTime.Now.AddDays(30);
+            Response.Cookies.Add(coco);
 
             lblmsg.Text = "Welcome " + txtfname.Text ;
 
@@ -360,7 +371,7 @@
                     <td class="auto-style49">
                         &nbsp;</td>
                     <td class="auto-style33">
-                        <asp:Label ID="Label5" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" Text="Date of Birth:"></asp:Label>
+                        <asp:Label ID="Label5" Font-Names="Bahnschrift SemiBold" ForeColor="White" runat="server" Text="Age: "></asp:Label>
                     </td>
                     <td class="auto-style71">
                         &nbsp;</td>
@@ -377,12 +388,13 @@
                     <td class="auto-style121"></td>
                     <td class="auto-style52"></td>
                     <td class="auto-style36">
-                        <asp:TextBox ID="txtbirth" runat="server" Width="180px" TextMode="Date"></asp:TextBox>
+                        <asp:TextBox ID="txtage" runat="server" Width="180px"></asp:TextBox>
                     </td>
                     <td class="auto-style74">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtbirth" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtage" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style15">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="txtage" ErrorMessage="Invalid Last Name Format!" ForeColor="#FFFFCC" ValidationExpression="([1-5]([5-9]|[6-9]|[7-9]|[8-9]|[9]))|([2-5][0-9])"></asp:RegularExpressionValidator>
                         </td>
                 </tr>
                 <tr>
@@ -514,7 +526,7 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtpass" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style87">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters!" ForeColor="#FFFFCC" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters! &amp; has 3-4 digits" ForeColor="#FFFFCC" ValidationExpression="\D{5,8}\d{3,4}"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style88">
                         <asp:TextBox ID="txtrpass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>

@@ -11,6 +11,18 @@ namespace WebProj1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+                string username = "";
+                string fname = "";
+                if (Request.Cookies["userInfo"] != null)
+                {
+                      fname = Request.Cookies["userInfo"].Values["Fn"];
+                      username = Request.Cookies["userInfo"].Values["usern"];
+                      lblname.Text = fname ;
+              
+                imgUserPic.ImageUrl = "~/userPic/" + username + ".jpg";
+                }
+
+            
 
         }
     }

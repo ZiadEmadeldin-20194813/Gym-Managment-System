@@ -15,7 +15,7 @@
         string strSelect = "SELECT * FROM Member"
             + " WHERE Username = '" + txtUsername.Text + "'  AND Password = '" + txtPassword.Text + "'";
 
-
+        
         // 3-Create SQL Select Command
         SqlCommand cmdSelect = new SqlCommand(strSelect,conn);
 
@@ -30,16 +30,35 @@
 
         if (reader.Read())
         {
-            if (txtUsername.Text == "admin2022")   
-                // Response.Redirect("~/adminHome.aspx");
-                lbllogin.Text = "Welcome admin";
-            else if (txtUsername.Text == "coach1" || txtUsername.Text == "coach2" || txtUsername.Text == "coach3")
-                 // Response.Redirect("~/coachHome.aspx");
-                lbllogin.Text = "Welcome coach";
+
+            string Fname = (string)reader.GetValue(0);
+            string Lname = (string)reader.GetValue(1);
+
+            HttpCookie coco = new HttpCookie("userInfo");
+            coco.Values.Add("usern",txtUsername.Text);
+            coco.Values.Add("passw",txtPassword.Text);
+
+            coco.Values.Add("Fn", Fname);
+            coco.Values.Add("Ln", Lname);
+
+            coco.Expires = DateTime.Now.AddDays(30);
+            Response.Cookies.Add(coco);
+
+
+
+
+
+
+            if (txtUsername.Text == "admin2022")
+                Response.Redirect("~/adminHome.aspx");
+              
+            else if (txtUsername.Text == "coach111" || txtUsername.Text == "coach222" || txtUsername.Text == "coach333")
+                Response.Redirect("~/adminHome.aspx");
+             
             else
 
-                Response.Redirect("~/user.Master");
-               
+                Response.Redirect("~/userHome.aspx");
+
         }
         else
         {

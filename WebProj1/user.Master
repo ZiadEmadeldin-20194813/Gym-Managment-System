@@ -2,19 +2,209 @@
 
 <!DOCTYPE html>
 
-<html>
+<html style="background-image:url(pictures/gym5.jpg); background-size:cover; background-position:inherit;">
 <head runat="server">
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+            height: 532px;
+        }
+        .auto-style4 {
+            height: 75px;
+        }
+        .auto-style5 {
+            width: 101%;
+            text-align:center;
+            margin-right: 0px;
+        }
+        .auto-style6 {
+            height: 545px;
+        }
+        .auto-style7 {
+            height: 532px;
+        }
+        .auto-style8 {
+            height: 110px;
+            width: 918px;
+        }
+        .auto-style9 {
+            margin-top: 0px;
+        }
+        .auto-style10 {
+            height: 110px;
+            width: 381px;
+        }
+        .auto-style11 {
+            height: 89px;
+            width: 356px;
+            text-align:center;
+        }
+        .auto-style12 {
+            height: 7px;
+            width: 356px;
+            text-align:center;
+        }
+        .home{
+            color:white;
+        }
+        .acc {
+             color:white;
+        }
+        .schedule{
+             color:white;
+        }
+        .pr {
+             color:white;
+        }
+        .pages{
+             color:white;
+        }
+        .membership{
+             color:white;
+        }
+        .home:hover {
+
+             cursor: pointer;
+            color:#dd3333;
+            transition: 0.6s;
+            transform: translate(1px,1px);
+        }
+          .acc:hover {
+
+             cursor: pointer;
+            color:#dd3333;
+            transition: 0.6s;
+            transform: translate(1px,1px);
+        }
+           .schedule:hover {
+
+             cursor: pointer;
+            color:#dd3333;
+            transition: 0.6s;
+            transform: translate(1px,1px);
+        }
+            .pr:hover {
+
+             cursor: pointer;
+            color:#dd3333;
+            transition: 0.6s;
+            transform: translate(1px,1px);
+        }
+             .pages:hover {
+
+             cursor: pointer;
+            color:#dd3333;
+            transition: 0.6s;
+            transform: translate(1px,1px);
+        }
+              .membership:hover {
+
+             cursor: pointer;
+            color:#dd3333;
+            transition: 0.6s;
+            transform: translate(1px,1px);
+        }
+
+        .auto-style13 {
+            height: 35px;
+            background-color:#dd3333;
+        }
+        .img {
+
+            height:80px;
+            width:90px;
+        
+            border-block-color:white;
+            border-radius: 50px;
+        }
+
+    </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
+    <form id="form1" runat="server" class="auto-style7">
+        <div class="auto-style6">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style10" rowspan="2">
+                       
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Image ID="Image1" runat="server" CssClass="auto-style9" Height="42px" ImageUrl="~/pictures/masterlogo.png" Width="162px" />
+                       
+                    </td>
+                    <td class="auto-style8" rowspan="2">
+                        <table class="auto-style5">
+                            <tr>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Home" NavigateUrl="~/userHome.aspx" CssClass="home"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink8" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="My account" CssClass="acc"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink9" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Schedule" CssClass="schedule" NavigateUrl="~/userSchedule.aspx"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink10" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Products" CssClass="pr"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink11" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Pages" CssClass="pages"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Membership" CssClass="membership"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink13" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Sign out" CssClass="membership"></asp:Hyperlink>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="auto-style11">
+                        <asp:Image ID="imgUserPic" runat="server" CssClass="img" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style12">
+                        <asp:Label ID="lblname" runat="server" ForeColor="White" Font-Names="Bahnschrift SemiBold"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4" colspan="3" style="vertical-align: top">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="auto-style13" >&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Label ID="Label1" runat="server" Font-Names="Arial" Font-Size="Small" ForeColor="#FFFFCC" Text="Copyright ©2022 All rights reserved!" CssClass="footer"></asp:Label>
+                    </td>
+                </tr>
+            </table>
+           
+            <br />
+           
         </div>
-        <asp:Label ID="Label1" runat="server" Text="hiii"></asp:Label>
     </form>
 </body>
 </html>
