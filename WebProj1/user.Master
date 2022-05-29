@@ -153,10 +153,10 @@
                                     <asp:Hyperlink ID="Hyperlink11" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Pages" CssClass="pages"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Membership" CssClass="membership"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Membership" CssClass="membership" NavigateUrl="~/userMembership.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink13" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Sign out" CssClass="membership"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink13" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Sign out" CssClass="membership" NavigateUrl="~/home.html"></asp:Hyperlink>
                                 </td>
                             </tr>
                         </table>

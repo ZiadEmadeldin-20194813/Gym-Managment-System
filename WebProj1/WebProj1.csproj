@@ -79,7 +79,7 @@
     <Content Include="links.aspx" />
     <Content Include="links.html" />
     <Content Include="loginform.aspx" />
-    <Content Include="membership.aspx" />
+    <Content Include="memberAccounts.aspx" />
     <Content Include="ourteam.aspx" />
     <Content Include="pictures\backsignup.png" />
     <Content Include="pictures\c1.jpg" />
@@ -113,6 +113,10 @@
     <Content Include="pictures\mobilelogo.png" />
     <Content Include="pictures\search.png" />
     <Content Include="pictures\twitter1.png" />
+    <Content Include="pictures\unkownpc.jpg" />
+    <Content Include="SuccessMembership.aspx" />
+    <Content Include="userAccounts.aspx" />
+    <Content Include="userMembership.aspx" />
     <Content Include="userSchedule.aspx" />
     <Content Include="signupform.aspx" />
     <Content Include="social.aspx" />
@@ -165,12 +169,12 @@
     <Compile Include="loginform.aspx.designer.cs">
       <DependentUpon>loginform.aspx</DependentUpon>
     </Compile>
-    <Compile Include="membership.aspx.cs">
-      <DependentUpon>membership.aspx</DependentUpon>
+    <Compile Include="memberAccounts.aspx.cs">
+      <DependentUpon>memberAccounts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="membership.aspx.designer.cs">
-      <DependentUpon>membership.aspx</DependentUpon>
+    <Compile Include="memberAccounts.aspx.designer.cs">
+      <DependentUpon>memberAccounts.aspx</DependentUpon>
     </Compile>
     <Compile Include="ourteam.aspx.cs">
       <DependentUpon>ourteam.aspx</DependentUpon>
@@ -180,6 +184,27 @@
       <DependentUpon>ourteam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SuccessMembership.aspx.cs">
+      <DependentUpon>SuccessMembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SuccessMembership.aspx.designer.cs">
+      <DependentUpon>SuccessMembership.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userAccounts.aspx.cs">
+      <DependentUpon>userAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userAccounts.aspx.designer.cs">
+      <DependentUpon>userAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="userMembership.aspx.cs">
+      <DependentUpon>userMembership.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="userMembership.aspx.designer.cs">
+      <DependentUpon>userMembership.aspx</DependentUpon>
+    </Compile>
     <Compile Include="userSchedule.aspx.cs">
       <DependentUpon>userSchedule.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

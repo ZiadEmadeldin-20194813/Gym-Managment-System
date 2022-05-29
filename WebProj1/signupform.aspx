@@ -33,6 +33,7 @@
             {
                 fupPic.SaveAs(Server.MapPath("userPic") + "\\" + txtusername.Text + ".jpg");
             }
+          
 
 
             HttpCookie coco = new HttpCookie("userInfo");

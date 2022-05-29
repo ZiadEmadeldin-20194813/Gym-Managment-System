@@ -69,6 +69,15 @@ namespace WebProj1
         protected global::System.Web.UI.WebControls.HyperLink Hyperlink10;
 
         /// <summary>
+        /// Hyperlink14 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink Hyperlink14;
+
+        /// <summary>
         /// Hyperlink12 control.
         /// </summary>
         /// <remarks>

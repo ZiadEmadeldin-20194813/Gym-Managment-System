@@ -49,10 +49,7 @@
 
 
 
-            if (txtUsername.Text == "admin2022")
-                Response.Redirect("~/adminHome.aspx");
-              
-            else if (txtUsername.Text == "coach111" || txtUsername.Text == "coach222" || txtUsername.Text == "coach333")
+            if (txtUsername.Text == "admin2022" || txtUsername.Text == "Coach111" || txtUsername.Text == "Coach222" || txtUsername.Text == "Coach333")
                 Response.Redirect("~/adminHome.aspx");
              
             else

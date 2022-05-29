@@ -138,19 +138,22 @@
                         <table class="auto-style5">
                             <tr>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Home" CssClass="home"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Home" CssClass="home" NavigateUrl="~/adminHome.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
                                     <asp:Hyperlink ID="Hyperlink8" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="My account" CssClass="acc"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink10" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="User accounts" CssClass="pr"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink10" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="User accounts" CssClass="pr" NavigateUrl="~/userAccounts.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Members" CssClass="membership"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink14" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="SQL Query" CssClass="membership"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink13" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Sign out" CssClass="membership"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Members" CssClass="membership" NavigateUrl="~/memberAccounts.aspx"></asp:Hyperlink>
+                                </td>
+                                <td>
+                                    <asp:Hyperlink ID="Hyperlink13" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Sign out" CssClass="membership" NavigateUrl="~/home.html"></asp:Hyperlink>
                                 </td>
                             </tr>
                         </table>
