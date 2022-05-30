@@ -114,6 +114,7 @@
     <Content Include="pictures\search.png" />
     <Content Include="pictures\twitter1.png" />
     <Content Include="pictures\unkownpc.jpg" />
+    <Content Include="sqlQuery.aspx" />
     <Content Include="SuccessMembership.aspx" />
     <Content Include="userAccounts.aspx" />
     <Content Include="userMembership.aspx" />
@@ -184,6 +185,13 @@
       <DependentUpon>ourteam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sqlQuery.aspx.cs">
+      <DependentUpon>sqlQuery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sqlQuery.aspx.designer.cs">
+      <DependentUpon>sqlQuery.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SuccessMembership.aspx.cs">
       <DependentUpon>SuccessMembership.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

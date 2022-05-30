@@ -147,7 +147,7 @@
                                     <asp:Hyperlink ID="Hyperlink10" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="User accounts" CssClass="pr" NavigateUrl="~/userAccounts.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink14" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="SQL Query" CssClass="membership"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink14" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="SQL Query" CssClass="membership" NavigateUrl="~/sqlQuery.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
                                     <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Members" CssClass="membership" NavigateUrl="~/memberAccounts.aspx"></asp:Hyperlink>
