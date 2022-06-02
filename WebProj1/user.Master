@@ -141,16 +141,10 @@
                                     <asp:Hyperlink ID="Hyperlink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Home" NavigateUrl="~/userHome.aspx" CssClass="home"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink8" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="My account" CssClass="acc"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink8" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="My account" CssClass="acc" NavigateUrl="~/myAccount1.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
                                     <asp:Hyperlink ID="Hyperlink9" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Schedule" CssClass="schedule" NavigateUrl="~/userSchedule.aspx"></asp:Hyperlink>
-                                </td>
-                                <td>
-                                    <asp:Hyperlink ID="Hyperlink10" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Products" CssClass="pr"></asp:Hyperlink>
-                                </td>
-                                <td>
-                                    <asp:Hyperlink ID="Hyperlink11" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Pages" CssClass="pages"></asp:Hyperlink>
                                 </td>
                                 <td>
                                     <asp:Hyperlink ID="Hyperlink12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Membership" CssClass="membership" NavigateUrl="~/userMembership.aspx"></asp:Hyperlink>

@@ -527,7 +527,7 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtpass" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style87">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters! &amp; has 3-4 digits" ForeColor="#FFFFCC" ValidationExpression="\D{5,8}\d{3,4}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="txtpass" ErrorMessage="Should be between 8-12 characters! &amp; has 3-4 digits" ForeColor="#FFFFCC" ValidationExpression="\D{8,12}\d{3,4}"></asp:RegularExpressionValidator>
                         </td>
                     <td class="auto-style88">
                         <asp:TextBox ID="txtrpass" runat="server" Width="180px" TextMode="Password"></asp:TextBox>
