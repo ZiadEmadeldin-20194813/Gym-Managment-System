@@ -3,7 +3,7 @@
     <style type="text/css">
         .auto-style14 {
             width: 82%;
-            margin-left: 33px;
+            margin-left: 87px;
         }
         .auto-style18 {
             width: 183px;
@@ -112,10 +112,14 @@
             color:#dd3333;
             background-color:white;
         }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label12" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="35px" ForeColor="#DD3333" Text="Membership form" Font-Bold="False" Font-Italic="False" Font-Strikeout="False" Font-Underline="True"></asp:Label>
         <br />
         <table class="auto-style14">
             <tr>

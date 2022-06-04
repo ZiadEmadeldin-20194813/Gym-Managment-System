@@ -95,6 +95,16 @@ namespace WebProj1
 
             conn.Close();
             lblmsg.Text = "Your account has been updated!";
+
+            txtfname.Enabled = false;
+            txtlname.Enabled = false;
+            rbtnGender.Enabled = false;
+            txtage.Enabled = false;
+            txtemail.Enabled = false;
+            txtphone.Enabled = false;
+            txtusername.Enabled = false;
+            fupPic.Enabled = false;
+
         }
     }
 }

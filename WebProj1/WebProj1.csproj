@@ -81,6 +81,7 @@
     <Content Include="loginform.aspx" />
     <Content Include="memberAccounts.aspx" />
     <Content Include="myAccount1.aspx" />
+    <Content Include="myAccount2.aspx" />
     <Content Include="ourteam.aspx" />
     <Content Include="pictures\backsignup.png" />
     <Content Include="pictures\c1.jpg" />
@@ -184,6 +185,13 @@
     </Compile>
     <Compile Include="myAccount1.aspx.designer.cs">
       <DependentUpon>myAccount1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="myAccount2.aspx.cs">
+      <DependentUpon>myAccount2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="myAccount2.aspx.designer.cs">
+      <DependentUpon>myAccount2.aspx</DependentUpon>
     </Compile>
     <Compile Include="ourteam.aspx.cs">
       <DependentUpon>ourteam.aspx</DependentUpon>

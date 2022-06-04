@@ -141,7 +141,7 @@
                                     <asp:Hyperlink ID="Hyperlink7" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="Home" CssClass="home" NavigateUrl="~/adminHome.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
-                                    <asp:Hyperlink ID="Hyperlink8" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="My account" CssClass="acc"></asp:Hyperlink>
+                                    <asp:Hyperlink ID="Hyperlink8" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="My account" CssClass="acc" NavigateUrl="~/myAccount2.aspx"></asp:Hyperlink>
                                 </td>
                                 <td>
                                     <asp:Hyperlink ID="Hyperlink10" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Font-Underline="False" Text="User accounts" CssClass="pr" NavigateUrl="~/userAccounts.aspx"></asp:Hyperlink>

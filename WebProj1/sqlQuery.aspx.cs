@@ -26,27 +26,29 @@ namespace WebProj1
             SqlCommand cmdSelect = new SqlCommand(txtQuery.Text, conn);
 
             DataTable tbl = new DataTable();
-            conn.Open();
+            try
+            {
+                conn.Open();
 
-            SqlDataReader reader;
+                SqlDataReader reader;
+            
+                reader = cmdSelect.ExecuteReader();
 
-            reader = cmdSelect.ExecuteReader();
-         
                 tbl.Load(reader);
+            }
+            catch
+            {
+                lbl.Text = "Incorrect SQL Query format!";
+            }
+            gdvResult.DataSource = tbl;
+            gdvResult.DataBind();
 
-            
-                tbl.Load(cmdSelect.ExecuteReader());
-
-                gdvResult.DataSource = tbl;
-                gdvResult.DataBind();
-            
-          
             //chtResult.DataSource = tbl;
             //chtResult.DataBind();
 
 
             conn.Close();
-
+            
         }
     }
 }

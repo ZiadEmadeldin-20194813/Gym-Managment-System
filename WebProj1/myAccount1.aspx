@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style14 {
-            width: 39%;
+            width: 56%;
             height: 407px;
             margin-left: 73px;
             margin-right: 0px;
@@ -87,6 +87,9 @@
                 <td class="auto-style36">
                     <asp:TextBox ID="txtfname" runat="server" Enabled="False" Width="208px"></asp:TextBox>
                 </td>
+                <td class="auto-style36">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="txtfname" ErrorMessage="Invalid First Name Format!" ForeColor="#DD3333" ValidationExpression="([A-Z][a-z]*)([ ][A-Z][a-z]*)*" Font-Names="Bahnschrift SemiBold"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style35">
@@ -94,6 +97,9 @@
                 </td>
                 <td class="auto-style36">
                     <asp:TextBox ID="txtlname" runat="server" Enabled="False" Width="208px"></asp:TextBox>
+                </td>
+                <td class="auto-style36">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="txtlname" ErrorMessage="Invalid Last Name Format!" ForeColor="#DD3333" ValidationExpression="([A-Z][a-z]*)([ ][A-Z][a-z]*)*" Font-Names="Bahnschrift SemiBold"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -106,6 +112,8 @@
                         <asp:ListItem Value="F">Female</asp:ListItem>
                     </asp:RadioButtonList>
                 </td>
+                <td class="auto-style36">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style35">
@@ -113,6 +121,9 @@
                 </td>
                 <td class="auto-style36">
                     <asp:TextBox ID="txtage" runat="server" Enabled="False" Width="208px"></asp:TextBox>
+                </td>
+                <td class="auto-style36">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txtage" ErrorMessage="Should be not less than 15 " ForeColor="#DD3333" ValidationExpression="([1-5]([5-9]|[6-9]|[7-9]|[8-9]|[9]))|([2-5][0-9])" Font-Names="Bahnschrift SemiBold"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -124,6 +135,8 @@
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Country] FROM [Country]"></asp:SqlDataSource>
                 </td>
+                <td class="auto-style36">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style35">
@@ -131,6 +144,9 @@
                 </td>
                 <td class="auto-style36">
                     <asp:TextBox ID="txtphone" runat="server" Enabled="False" Width="208px"></asp:TextBox>
+                </td>
+                <td class="auto-style36">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtphone" ErrorMessage="Should be between 8-14 digits!" Font-Names="Bahnschrift SemiBold" ForeColor="#DD3333" ValidationExpression="\d{8,14}"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
@@ -140,6 +156,9 @@
                 <td class="auto-style36">
                     <asp:TextBox ID="txtemail" runat="server" Enabled="False" Width="208px"></asp:TextBox>
                 </td>
+                <td class="auto-style36">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txtemail" ErrorMessage="Invalid Email format!" Font-Names="Bahnschrift SemiBold" ForeColor="#DD3333" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style35">
@@ -148,6 +167,8 @@
                 <td class="auto-style36">
                     <asp:TextBox ID="txtusername" runat="server" Enabled="False" Width="208px"></asp:TextBox>
                 </td>
+                <td class="auto-style36">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style39">
@@ -156,6 +177,8 @@
                 <td class="auto-style40">
                     <asp:FileUpload ID="fupPic" runat="server" />
                 </td>
+                <td class="auto-style40">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style39">&nbsp;<br />
@@ -167,12 +190,16 @@
                     <br />
 &nbsp;<asp:Button ID="btnSave" runat="server" OnClick="btnSave_Click" Font-Names="Bahnschrift SemiBold" Font-Size="Large" Height="35px" Text="Save" Width="120px" CssClass="editbtn" />
                 </td>
+                <td class="auto-style40">
+                    &nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style41" colspan="2">
                     <br />
                     <asp:Label ID="lblmsg" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Large" ForeColor="#DD3333"></asp:Label>
                 </td>
+                <td class="auto-style41">
+                    &nbsp;</td>
             </tr>
         </table>
     </p>

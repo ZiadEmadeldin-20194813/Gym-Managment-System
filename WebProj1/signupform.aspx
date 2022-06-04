@@ -395,7 +395,7 @@
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtage" ErrorMessage="RequiredFieldValidator" ForeColor="#FFFFCC">*</asp:RequiredFieldValidator>
                     </td>
                     <td class="auto-style15">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="txtage" ErrorMessage="Invalid Last Name Format!" ForeColor="#FFFFCC" ValidationExpression="([1-5]([5-9]|[6-9]|[7-9]|[8-9]|[9]))|([2-5][0-9])"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="txtage" ErrorMessage="Should be not less than 15 " ForeColor="#FFFFCC" ValidationExpression="([1-5]([5-9]|[6-9]|[7-9]|[8-9]|[9]))|([2-5][0-9])"></asp:RegularExpressionValidator>
                         </td>
                 </tr>
                 <tr>
@@ -440,7 +440,7 @@
                     <td class="auto-style74">
                         &nbsp;</td>
                     <td class="auto-style15">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="txtnumber" ErrorMessage="Invalid Phone Number Format!" ForeColor="#FFFFCC" ValidationExpression="\d{10,14}"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="txtnumber" ErrorMessage="Should be between 8-14 digits!" ForeColor="#FFFFCC" ValidationExpression="\d{8,14}"></asp:RegularExpressionValidator>
                         </td>
                 </tr>
                 <tr>

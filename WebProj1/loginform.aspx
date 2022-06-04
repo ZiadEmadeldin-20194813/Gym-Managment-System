@@ -238,7 +238,7 @@
             <tr>
                 <td class="auto-style26" colspan="4">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold"  Font-Size="Medium" ForeColor="#FFFFCC"></asp:Label>
+                    <asp:Label ID="lbllogin" runat="server" Font-Names="Bahnschrift SemiBold" Font-Size="Medium" ForeColor="#FFFFCC"></asp:Label>
                 </td>
             </tr>
         </table>
