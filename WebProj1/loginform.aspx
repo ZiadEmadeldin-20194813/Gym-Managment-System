@@ -46,9 +46,6 @@
 
 
 
-
-
-
             if (txtUsername.Text == "admin2022" || txtUsername.Text == "Coach111" || txtUsername.Text == "Coach222" || txtUsername.Text == "Coach333")
                 Response.Redirect("~/adminHome.aspx");
              

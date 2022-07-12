@@ -10,7 +10,7 @@
         //1-Create Connection Object;
         SqlConnection conn = new SqlConnection();
         conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
-
+        
         //2-create insert statement;
         string strInsert = String.Format("INSERT INTO Member VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}')",txtfname.Text, txtlname.Text , rbtn1.SelectedValue, txtage.Text, ddlcountry.SelectedValue, txtemail.Text, txtnumber.Text, txtusername.Text, txtpass.Text);
 

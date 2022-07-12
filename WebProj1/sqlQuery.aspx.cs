@@ -26,11 +26,11 @@ namespace WebProj1
             SqlCommand cmdSelect = new SqlCommand(txtQuery.Text, conn);
 
             DataTable tbl = new DataTable();
-            try
-            {
-                conn.Open();
+            SqlDataReader reader;
 
-                SqlDataReader reader;
+            try
+            { 
+                conn.Open();
             
                 reader = cmdSelect.ExecuteReader();
 
@@ -40,12 +40,8 @@ namespace WebProj1
             {
                 lbl.Text = "Incorrect SQL Query format!";
             }
-            gdvResult.DataSource = tbl;
+            gdvResult.DataSource=tbl;
             gdvResult.DataBind();
-
-            //chtResult.DataSource = tbl;
-            //chtResult.DataBind();
-
 
             conn.Close();
             

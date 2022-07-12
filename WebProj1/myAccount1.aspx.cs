@@ -68,8 +68,7 @@ namespace WebProj1
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = new SqlConnection();
+        {   SqlConnection conn = new SqlConnection();
             conn.ConnectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|gym.mdf;Integrated Security=True";
 
             string username = "";
@@ -95,7 +94,6 @@ namespace WebProj1
 
             conn.Close();
             lblmsg.Text = "Your account has been updated!";
-
             txtfname.Enabled = false;
             txtlname.Enabled = false;
             rbtnGender.Enabled = false;
